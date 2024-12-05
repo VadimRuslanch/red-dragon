@@ -1,0 +1,77 @@
+:root {
+  color-scheme: light dark;
+
+
+  /* --------- Global --------- */
+  --color-bg-main: #F9F9FC;
+  --color-bg-modal: #1E1E1E;
+  --color-accent: #D6861A;
+
+  /* --------- Global Modal --------- */
+  --transition-properties: 1.25s cubic-bezier(0.62, 0.05, 0.01, 0.99);
+  --transition-clip-path-modal: clip-path var(--transition-properties);
+
+
+  /* --------- Swiper --------- */
+  --swiper-pagination-bullet-horizontal-gap: 2.5px;
+  --swiper-pagination-bullet-width: 12px;
+  --swiper-pagination-bullet-height: 12px;
+  --swiper-pagination-bullet-inactive-color: #F4F4F8;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-color: var(--color-accent);
+
+  /* --------- Scrollbar --------- */
+  --color-scrollbar: #E6E6E6;
+  --color-scrollbar-thumb: #BEBEBE;
+
+
+  /* --------- Heading --------- */
+  --app-headings-font: sans-serif;
+  --font-size-heading: 3rem;
+
+
+  /* --------- UI unit elements --------- */
+  --color-ui-element: #1E1E1E;
+  --color-ui-element-line: #D6D6D6;
+
+  /* --------- // UI accent unit elements --------- */
+
+
+  /* --------- // UI elements --------- */
+  --color-ui-element-background: #1E1E1E;
+  --color-ui-element-background-hover: #E6E6EF;
+  --color-ui-element-layer-first: #FFFFFF;
+  --color-ui-element-layer-second: #1E1E1E;
+
+
+
+  /* --------- // UI accent elements --------- */
+  --color-ui-element-accent-background: #1E1E1E;
+  --color-ui-element-accent-layer-first: #FFFFFF;
+
+  /* --------- //// UI Components --------- */
+  --color-ui-component-background: #F4F4F8;
+  --color-ui-component-layer-first: #FFFFFF;
+  --color-ui-component-layer-second: #1E1E1E;
+
+  /* --------- //// UI accent Components --------- */
+  --color-ui-component-accent-background: #F4F4F8;
+  --color-ui-component-accent-layer-first: #FFFFFF;
+  --color-ui-component-accent-layer-second: #1E1E1E;
+
+  /* --------- //// UI Components Additional --------- */
+  --color-ui-component-additional-background: #FFFFFF;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

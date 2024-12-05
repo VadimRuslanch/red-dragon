@@ -1,7 +1,7 @@
 <template>
-  <div class='HeaderComponent'>
-
-  </div>
+  <header class='HeaderComponent'>
+    HeaderComponent
+  </header>
 </template>
 
 <script lang="ts">

@@ -1,8 +1,10 @@
 <template>
-  <div class='DefaultLayout'>
-    <slot/>
+  <div class='PartnersPage'>
+
   </div>
 </template>
 
 <script setup lang="ts">
+import './PartnersPage.scss'
+
 </script>

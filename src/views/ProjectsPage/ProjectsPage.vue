@@ -1,8 +1,10 @@
 <template>
-  <div class='DefaultLayout'>
-    <slot/>
+  <div class='ProjectsPage'>
+
   </div>
 </template>
 
 <script setup lang="ts">
+import './ProjectsPage.scss'
+
 </script>

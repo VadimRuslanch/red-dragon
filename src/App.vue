@@ -1,5 +1,9 @@
 <template>
-  <DefaultLayout/>
+  <DefaultLayout>
+    <main>
+      <RouterView/>
+    </main>
+  </DefaultLayout>
 </template>
 
 <script setup lang="ts">
