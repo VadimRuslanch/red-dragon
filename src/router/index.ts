@@ -14,7 +14,7 @@ const routes: Array<RouteRecordRaw> = [
     {
         path: '/',
         name: 'Home',
-        component: HomePage, // Можно сделать AboutPage домашней страницей
+        component: HomePage,
     },
     {
         path: '/about',
