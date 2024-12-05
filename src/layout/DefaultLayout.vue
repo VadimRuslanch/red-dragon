@@ -1,8 +1,12 @@
 <template>
-  <div class='DefaultLayout'>
+  <HeaderComponent/>
+  <main class='DefaultLayout'>
     <slot/>
-  </div>
+  </main>
+  <FooterComponent/>
 </template>
 
 <script setup lang="ts">
+import HeaderComponent from '@/components/HeaderComponent/HeaderComponent.vue'
+import FooterComponent from "@/components/FooterComponent/FooterComponent.vue";
 </script>

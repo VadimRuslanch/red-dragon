@@ -4,7 +4,6 @@
   </header>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import './HeaderComponent.scss'
-
 </script>
