@@ -3,3 +3,78 @@
   height: 93px;
   cursor: pointer;
 }
+
+$lineThickness: 3px;
+$transitionSpeed: .2s;
+$transitionEasing: ease;
+
+.ButtonBurger {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 30px;
+
+
+  font-size: 0;
+
+  transition: all $transitionSpeed $transitionEasing;
+
+  & span {
+    display: block;
+    height: 100%;
+
+    &:before,
+    &:after {
+      transition: all $transitionSpeed $transitionEasing;
+      border-radius: 24px;
+      content: '';
+      display: block;
+      width: 100%;
+      height: $lineThickness;
+      background: currentColor;
+    }
+
+    &:after {
+      margin-top: 24px;
+    }
+  }
+
+  &:before,
+  &:after {
+    border-radius: 24px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: $lineThickness;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    background: currentColor;
+
+    transform: translate(-50%, -50%);
+    transition: transform $transitionSpeed $transitionEasing;
+  }
+}
+
+.ButtonBurger:hover {
+  color: var(--color-ui-unit-hover);
+}
+
+.ButtonBurger.active {
+  span {
+    &:before,
+    &:after{
+      background: transparent;
+    }
+  }
+
+  &:before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &:after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}

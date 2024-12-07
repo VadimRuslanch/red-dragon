@@ -1,10 +1,15 @@
 <template>
-  <button class="ButtonBurger">
-    <IconBurger width="40" height="30" fill="#222222" />
+  <button class="ButtonBurger" :class="{ active: isActive }" @click="toggle">
+    <span />
   </button>
 </template>
 
 <script setup lang="ts">
 import './ButtonBurger.scss';
-import IconBurger from '@/assets/svg/burger.svg';
+import { ref } from '@vue/runtime-dom';
+const isActive = ref<boolean>(false);
+
+const toggle = () => {
+  isActive.value = !isActive.value;
+};
 </script>

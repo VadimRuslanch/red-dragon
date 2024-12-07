@@ -1,5 +1,5 @@
 <template>
-  <div class="NotFoundPage"></div>
+  <div class="NotFoundPage">Такой страницы нет</div>
 </template>
 
 <script setup lang="ts">

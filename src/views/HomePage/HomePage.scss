@@ -11,8 +11,19 @@
   align-items: flex-end;
 }
 
+.HomePage__preview-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
 .HomePage__preview-center-title {
 
+}
+
+.HomePage__preview-center-description {
+  margin: 40px 0 120px;
 }
 
 .HomePage__preview-image {

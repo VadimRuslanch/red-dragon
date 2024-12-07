@@ -1,25 +1,20 @@
 <template>
   <nav>
     <ul class="NavigationMain">
-      <li class="NavigationMain__item">
-        <span class="NavigationMain__item-title">О фонде</span>
-        <IconArrow class="NavigationMain__item-icon" />
+      <li>
+        <NavLink :title="'О фонде'" :link="'about'" />
       </li>
-      <li class="NavigationMain__item">
-        <span class="NavigationMain__item-title">Проекты</span>
-        <IconArrow class="NavigationMain__item-icon" />
+      <li>
+        <NavLink :title="'Проекты'" :link="'projects'" />
       </li>
-      <li class="NavigationMain__item">
-        <span class="NavigationMain__item-title">Новости</span>
-        <IconArrow class="NavigationMain__item-icon" />
+      <li>
+        <NavLink :title="'Новости'" :link="'news'" />
       </li>
-      <li class="NavigationMain__item">
-        <span class="NavigationMain__item-title">Партнеры</span>
-        <IconArrow class="NavigationMain__item-icon" />
+      <li>
+        <NavLink :title="'Партнеры'" :link="'partners'" />
       </li>
-      <li class="NavigationMain__item">
-        <span class="NavigationMain__item-title">Контакты</span>
-        <IconArrow class="NavigationMain__item-icon" />
+      <li>
+        <NavLink :title="'Контакты'" :link="'contacts'" />
       </li>
     </ul>
   </nav>
@@ -27,5 +22,5 @@
 
 <script setup lang="ts">
 import './NavigationMain.scss';
-import IconArrow from '@/assets/svg/arrow-link.svg';
+import NavLink from '@/components/NavigationMain/components/NavLink/NavLink.vue';
 </script>
