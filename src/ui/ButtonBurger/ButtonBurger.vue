@@ -7,6 +7,7 @@
 <script setup lang="ts">
 import './ButtonBurger.scss';
 import { ref } from '@vue/runtime-dom';
+
 const isActive = ref<boolean>(false);
 
 const toggle = () => {

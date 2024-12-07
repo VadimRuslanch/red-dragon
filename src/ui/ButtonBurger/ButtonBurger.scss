@@ -1,4 +1,4 @@
-$lineThickness: 3px;
+$lineThickness: 4px;
 $transitionSpeed: .2s;
 $transitionEasing: ease;
 
@@ -19,7 +19,7 @@ $transitionEasing: ease;
     &:before,
     &:after {
       transition: all $transitionSpeed $transitionEasing;
-      border-radius: 24px;
+      border-radius: 553px;
       content: '';
       display: block;
       width: 100%;
@@ -34,7 +34,7 @@ $transitionEasing: ease;
 
   &:before,
   &:after {
-    border-radius: 24px;
+    border-radius: 553px;
     content: '';
     display: block;
     width: 100%;
