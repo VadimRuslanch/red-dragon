@@ -1,10 +1,7 @@
 <template>
-  <div class='NewsPage'>
-
-  </div>
+  <div class="NewsPage"></div>
 </template>
 
 <script setup lang="ts">
-import './NewsPage.scss'
-
+import './NewsPage.scss';
 </script>

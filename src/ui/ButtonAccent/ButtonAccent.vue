@@ -1,10 +1,7 @@
 <template>
-  <div class='ButtonAccent'>
-
-  </div>
+  <div class="ButtonAccent"></div>
 </template>
 
 <script setup lang="ts">
-import './ButtonAccent.scss'
-
+import './ButtonAccent.scss';
 </script>

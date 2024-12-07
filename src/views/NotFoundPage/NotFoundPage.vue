@@ -1,10 +1,7 @@
 <template>
-  <div class='NotFoundPage'>
-
-  </div>
+  <div class="NotFoundPage"></div>
 </template>
 
 <script setup lang="ts">
-import './NotFoundPage.scss'
-
+import './NotFoundPage.scss';
 </script>

@@ -1,2 +1,20 @@
-.HomePage{
+.HomePage {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.HomePage__preview {
+  display: grid;
+  grid-template-columns: 570px 570px 395px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.HomePage__preview-center-title {
+
+}
+
+.HomePage__preview-image {
+  width: 100%;
 }

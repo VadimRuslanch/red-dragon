@@ -1,10 +1,7 @@
 <template>
-  <div class='CardAccent'>
-
-  </div>
+  <div class="CardAccent"></div>
 </template>
 
 <script setup lang="ts">
-import './CardAccent.scss'
-
+import './CardAccent.scss';
 </script>

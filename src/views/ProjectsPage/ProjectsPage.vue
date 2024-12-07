@@ -1,10 +1,7 @@
 <template>
-  <div class='ProjectsPage'>
-
-  </div>
+  <div class="ProjectsPage"></div>
 </template>
 
 <script setup lang="ts">
-import './ProjectsPage.scss'
-
+import './ProjectsPage.scss';
 </script>

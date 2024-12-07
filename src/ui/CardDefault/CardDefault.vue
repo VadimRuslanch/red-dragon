@@ -1,10 +1,7 @@
 <template>
-  <div class='CardDefault'>
-
-  </div>
+  <div class="CardDefault"></div>
 </template>
 
 <script setup lang="ts">
-import './CardDefault.scss'
-
+import './CardDefault.scss';
 </script>

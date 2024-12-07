@@ -1,2 +1,9 @@
 .ButtonDefault {
+  font-family: Inter;
+  padding: 0 24px;
+  background-color: var(--color-ui-element-background);
+  color: var(--color-ui-element-text);
+  border-radius: var(--border-radius-ui-element);
+  height: 56px;
+  cursor: pointer;
 }

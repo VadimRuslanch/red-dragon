@@ -1,2 +1,4 @@
-@forward "vars";
-@forward "common";
+@use 'font';
+@use 'vars';
+@use 'reset';
+@use 'common';

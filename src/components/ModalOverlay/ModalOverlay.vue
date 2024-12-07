@@ -1,10 +1,7 @@
 <template>
-  <div class='ModalOverlay'>
-
-  </div>
+  <div class="ModalOverlay"></div>
 </template>
 
 <script setup lang="ts">
-import './ModalOverlay.scss'
-
+import './ModalOverlay.scss';
 </script>

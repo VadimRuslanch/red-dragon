@@ -1,10 +1,7 @@
 <template>
-  <footer class='Footer'>
-    Footer
-  </footer>
+  <footer class="Footer"></footer>
 </template>
 
 <script setup lang="ts">
-import './FooterComponent.scss'
-
+import './FooterComponent.scss';
 </script>
