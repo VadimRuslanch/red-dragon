@@ -1,5 +1,14 @@
 .Header {
-  display: flex;
+  display: grid;
+  grid-template-columns: 570px 570px 395px;
   align-items: center;
   justify-content: space-between;
+}
+
+.Header__logo{
+  align-self: flex-start;
+}
+
+.Header__burger{
+  justify-self: flex-end;
 }
