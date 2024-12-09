@@ -7,6 +7,7 @@
 }
 
 .NavigationMain__item {
+  color: var(--color-font-primary);
   display: flex;
   align-items: center;
 
@@ -26,6 +27,7 @@
   opacity: 0.1;
   font-size: var(--size-font-nav);
   margin-right: 34px;
+  font-weight: 700;
 }
 
 .NavigationMain__item-icon {

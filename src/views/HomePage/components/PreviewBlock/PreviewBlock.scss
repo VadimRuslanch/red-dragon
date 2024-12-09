@@ -1,0 +1,30 @@
+.PreviewBlock {
+  padding: 220px 0 148px;
+  background: linear-gradient(#ececec, #c7c7c7);
+}
+
+.PreviewBlock__preview {
+  display: grid;
+  grid-template-columns: 570px 570px 395px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.PreviewBlock__preview-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.PreviewBlock__preview-center-title {
+  font-size: 4rem;
+}
+
+.PreviewBlock__preview-center-description {
+  margin: 40px 0 120px;
+}
+
+.PreviewBlock__preview-image {
+  width: 100%;
+}

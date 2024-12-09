@@ -1,31 +1,22 @@
 .HomePage {
   display: flex;
   flex-direction: column;
-  gap: 100px;
 }
 
-.HomePage__preview {
-  display: grid;
-  grid-template-columns: 570px 570px 395px;
-  justify-content: space-between;
-  align-items: flex-end;
-}
+.HomePage__description {
+  font-family: Inter;
+  font-size: 1.5rem;
+  line-height: 120%;
+  color: var(--color-font-secondaty);
 
-.HomePage__preview-item {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
+  gap: 32px;
+  align-items: center;
 
-.HomePage__preview-center-title {
-
-}
-
-.HomePage__preview-center-description {
-  margin: 40px 0 120px;
-}
-
-.HomePage__preview-image {
-  width: 100%;
+  &::before {
+    content: '';
+    width: 40px;
+    height: 3.5px;
+    background: var(--color-accent);
+  }
 }

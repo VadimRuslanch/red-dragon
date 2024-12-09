@@ -1,0 +1,131 @@
+.Footer {
+  background-color: rgba(31, 31, 34, 1);
+  padding: 64px 0;
+
+  & .page {
+    display: grid;
+    grid-template-areas: 'logo' 'middle' 'bottom';
+  }
+}
+
+.Footer__logo {
+  grid-area: logo;
+  margin-bottom: 62px;
+}
+
+.Footer__middle {
+  grid-area: middle;
+  display: flex;
+  justify-content: space-between;
+  max-height: 271px;
+  margin-bottom: 128px;
+}
+
+.Footer__bottom {
+  grid-area: bottom;
+}
+
+.Footer__middle-left {
+  width: 60%;
+}
+
+.Footer__middle-left-title {
+  font-family: Bebas-Neue;
+  font-weight: 700;
+  line-height: 110%;
+  font-size: 4rem;
+  color: var(--color-font-secondaty);
+  margin-bottom: 40px;
+}
+
+.Footer__middle-left-description {
+  width: 70%;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--color-font-secondaty);
+  line-height: 150%;
+}
+
+.Footer__middle-right {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+  align-items: flex-end;
+}
+
+.Footer__middle-right-item {
+  transition: color .4s ease;
+  width: fit-content;
+  font-family: Inter;
+  color: var(--color-font-secondaty);
+  font-size: 1.5rem;
+  line-height: 150%;
+
+  &:hover {
+    color: var(--color-accent);
+  }
+}
+
+.Footer__middle-right-socials {
+  display: flex;
+  gap: 16px;
+  width: fit-content;
+}
+
+.Footer__middle-right-socials-item {
+  width: 40px;
+  height: 40px;
+
+  & svg {
+    transition: opacity .4s ease, fill .4s ease;
+    fill: #ffffff;
+    opacity: .3;
+  }
+}
+
+.Footer__middle-right-socials-item-vk {
+
+  &:hover svg {
+    opacity: 1;
+    fill: #0077ff;
+  }
+}
+
+.Footer__middle-right-socials-item-whatsapp {
+  &:hover svg {
+    opacity: 1;
+    fill: #43d854;
+  }
+}
+
+.Footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Footer__bottom-left-copy {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 150%;
+  color: var(--color-font-secondaty);
+  margin-right: 40px;
+}
+
+.Footer__bottom-left-privacy {
+  transition: opacity .4s ease;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 150%;
+  color: var(--color-font-secondaty);
+  opacity: .2;
+
+  &:hover {
+    opacity: 1;
+  }
+}

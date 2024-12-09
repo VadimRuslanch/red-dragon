@@ -1,14 +1,24 @@
 .Header {
-  display: grid;
-  grid-template-columns: 570px 570px 395px;
-  align-items: center;
-  justify-content: space-between;
+  padding: 26px 0 26px;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ECECEC;
+
+  & .container {
+    display: grid;
+    grid-template-columns: 570px 570px 395px;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
-.Header__logo{
+.Header__logo {
   align-self: flex-start;
 }
 
-.Header__burger{
+.Header__burger {
   justify-self: flex-end;
 }

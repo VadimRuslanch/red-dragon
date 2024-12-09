@@ -1,13 +1,13 @@
 <template>
   <button class="LogoComponent" @click="routeTo">
-    <IconLogo />
+    <IconLogo/>
   </button>
 </template>
 
 <script setup lang="ts">
 import './LogoComponent.scss';
 import IconLogo from '@/assets/svg/logo.svg';
-import { useRouter } from 'vue-router';
+import {useRouter} from 'vue-router';
 
 const router = useRouter();
 

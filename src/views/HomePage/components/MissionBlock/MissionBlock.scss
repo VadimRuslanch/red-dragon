@@ -1,0 +1,39 @@
+.MissionBlock {
+  padding: 144px 0 253px;
+
+  & .page {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-column-gap: 418px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.MissionBlock__left {
+  display: flex;
+  flex-direction: column;
+  gap: 128px;
+  padding-right: 169px;
+}
+
+.MissionBlock__about {
+
+}
+
+.MissionBlock__title {
+  color: var(--color-font-secondaty);
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 110%;
+  margin-bottom: 24px;
+}
+
+.MissionBlock__info {
+  font-family: Bebas-Neue;
+  color: var(--color-font-secondaty);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 120%;
+  opacity: .2;
+}
