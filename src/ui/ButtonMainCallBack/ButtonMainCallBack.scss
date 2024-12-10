@@ -1,4 +1,5 @@
 .ButtonMainCallBack {
+  transition: background-color .4s ease, color .4s ease;
   margin-top: 100px;
   width: 100%;
   height: 162px;
@@ -9,4 +10,9 @@
   background-color: var(--color-ui-element-accent-background);
   color: var(--color-ui-element-accent-text);
   border-radius: var(--border-radius-ui-element-accent);
+
+  &:hover {
+    background-color: var(--color-ui-element-accent-background-hover);
+    color: var(--color-ui-element-accent-text-hover);
+  }
 }

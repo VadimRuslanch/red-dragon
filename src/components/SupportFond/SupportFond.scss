@@ -1,0 +1,37 @@
+.SupportFond {
+  padding: 107px 0 100px;
+  background-color: var(--color-accent);
+  position: relative;
+
+  & .page {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.SupportFond__title {
+  max-width: 80%;
+  font-size: 5rem;
+  font-weight: 700;
+  font-family: Bebas-Neue;
+  line-height: 100%;
+  color: var(--color-font-secondaty);
+}
+
+.SupportFond__description {
+  margin: 70px auto 0;
+  max-width: 25%;
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: Inter;
+  line-height: 120%;
+  color: var(--color-font-secondaty);
+}
+
+.SupportFond__image {
+  transform: rotateY(180deg);
+  position: absolute;
+  right: 87px;
+  top: 90px;
+  fill: rgba(0, 0, 0, 0.08);
+}

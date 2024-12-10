@@ -1,0 +1,34 @@
+.AboutPageCard {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
+  padding: 40px;
+  width: 100%;
+  max-width: 415px;
+  aspect-ratio: 1;
+}
+
+.AboutPageCard__title {
+  font-weight: 700;
+  font-family: Bebas-Neue;
+  font-size: 2.25rem;
+  line-height: 130%;
+  color: var(--color-font-secondaty);
+}
+
+.AboutPageCard__description {
+  font-weight: 700;
+  font-family: Inter;
+  font-size: 1.25rem;
+  line-height: 130%;
+  color: var(--color-font-secondaty);
+}
+
+.AboutPageCard__image{
+  position: absolute;
+  fill: #ffffff;
+  opacity: .08;
+}
