@@ -1,34 +1,54 @@
 <template>
-  <div class='ProjectsList'>
+  <div class="ProjectsList">
     <div class="page">
       <span class="HomePage__description">Наши проекты</span>
 
       <ul class="ProjectsList__list">
-        <li class="ProjectsList__list-item">
-          <p>КИБЕРСПОРТ</p>
-        </li>
-        <li class="ProjectsList__list-item">
-          <p>МОДА</p>
-        </li>
-        <li class="ProjectsList__list-item">
-          <p>МУЗЫКА</p>
-        </li>
-        <li class="ProjectsList__list-item">
-          <p>ИСКУССТВО</p>
-        </li>
-        <li class="ProjectsList__list-item">
-          <p>КРАСОТА</p>
-        </li>
-        <li class="ProjectsList__list-item">
-          <p>СПОРТ</p>
-        </li>
-
+        <ProjectsListItem
+          v-for="(item, index) in listArray"
+          :title="item.title"
+          :number="index + 1"
+          :image="item.image"
+        />
       </ul>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import './ProjectsList.scss'
+import './ProjectsList.scss';
+import ProjectsListItem from '@/views/HomePage/components/ProjectsList/ProjectsListItem/ProjectsListItem.vue';
 
+const listArray = [
+  {
+    id: 1,
+    title: 'КИБЕРСПОРТ',
+    image: '/images/first.jpg',
+  },
+  {
+    id: 2,
+    title: 'МОДА',
+    image: '/images/first.jpg',
+  },
+  {
+    id: 3,
+    title: 'МУЗЫКА',
+    image: '/images/first.jpg',
+  },
+  {
+    id: 14,
+    title: 'ИСКУССТВО',
+    image: '/images/first.jpg',
+  },
+  {
+    id: 51,
+    title: 'КРАСОТА',
+    image: '/images/first.jpg',
+  },
+  {
+    id: 16,
+    title: 'СПОРТ',
+    image: '/images/first.jpg',
+  },
+];
 </script>

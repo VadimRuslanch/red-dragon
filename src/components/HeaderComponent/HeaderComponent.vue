@@ -1,18 +1,16 @@
 <template>
   <header class="Header">
-
     <div class="container">
       <div class="Header__logo">
-        <LogoComponent/>
+        <LogoComponent />
       </div>
       <div class="Header__button">
-        <ButtonDefault/>
+        <ButtonDefault />
       </div>
       <div class="Header__burger">
-        <ButtonBurger/>
+        <ButtonBurger />
       </div>
     </div>
-
   </header>
 </template>
 

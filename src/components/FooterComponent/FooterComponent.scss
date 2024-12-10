@@ -81,22 +81,19 @@
 
   & svg {
     transition: opacity .4s ease, fill .4s ease;
-    fill: #ffffff;
-    opacity: .3;
+    fill: rgba(255, 255, 255, 0.3);
   }
 }
 
 .Footer__middle-right-socials-item-vk {
 
   &:hover svg {
-    opacity: 1;
     fill: #0077ff;
   }
 }
 
 .Footer__middle-right-socials-item-whatsapp {
   &:hover svg {
-    opacity: 1;
     fill: #43d854;
   }
 }

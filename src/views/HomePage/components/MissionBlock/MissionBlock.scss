@@ -17,10 +17,6 @@
   padding-right: 169px;
 }
 
-.MissionBlock__about {
-
-}
-
 .MissionBlock__title {
   color: var(--color-font-secondaty);
   font-weight: 700;
@@ -35,5 +31,21 @@
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 120%;
-  opacity: .2;
+
+  & span {
+    transition: opacity .25s linear;
+  }
+}
+
+.MissionBlock__info {
+  width: 100%;
+}
+
+.MissionBlock__info .div_opacity {
+  -webkit-transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -ms-transition: opacity .2s ease-in-out;
+  -o-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
+  opacity: 1;
 }
