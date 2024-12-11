@@ -5,10 +5,13 @@
         >Руководство фонда
       </span>
 
-      <div class="AboutPageManagementBlock__info">
-        <img :src="image" />
+      <div class="AboutPageManagementBlock__info"   >
+		<Transition>
+		  <img class="AboutPageManagementBlock__image" :src="image" />
+		</Transition>
 
-        <ul class="ProjectsList__list">
+
+        <ul class="AboutPageManagementBlock__list">
           <AboutPageManagementBlockItem
             @mouseenter="setSlide(index)"
             v-for="(item, index) in listArray"

@@ -1,14 +1,22 @@
 .PreviewBlock {
-  padding: 220px 0 148px;
+  padding: 180px 0 148px;
   background: linear-gradient(#ececec, #c7c7c7);
+
+  @media screen and (min-width: 1680px) {
+    padding: 220px 0 148px;
+  }
 }
 
 .PreviewBlock__preview {
   display: grid;
-  grid-template-columns: 570px 570px 395px;
+  grid-template-columns: 33% 33% 20%;
   justify-content: space-between;
+  gap: 46px;
   align-items: flex-end;
   margin-bottom: 120px;
+  @media screen and (min-width: 1680px) {
+    grid-template-columns: max(570px) max(570px) 395px;
+  }
 }
 
 .PreviewBlock__preview-item {
@@ -19,13 +27,21 @@
 }
 
 .PreviewBlock__preview-center-title {
-  font-size: 4rem;
+  font-size: clamp(2rem, 0.316rem + 3.509vw, 4rem);
 }
 
 .PreviewBlock__preview-center-description {
-  margin: 40px 0 120px;
+  margin: 20px 0 60px;
+  @media screen and (min-width: 1280px) {
+    margin: 20px 0 90px;
+  }
+
+  @media screen and (min-width: 1680px) {
+    margin: 40px 0 120px;
+  }
 }
 
 .PreviewBlock__preview-image {
   width: 100%;
+  filter: grayscale(1);
 }

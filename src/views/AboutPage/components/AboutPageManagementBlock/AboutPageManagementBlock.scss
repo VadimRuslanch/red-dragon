@@ -3,17 +3,26 @@
 
   & .AboutPageManagementBlock__info {
     display: grid;
-    grid-template-columns: 250px 1fr;
-    grid-column-gap: 418px;
+    grid-template-columns: 458px 60%;
     justify-content: space-between;
     align-items: flex-start;
   }
 }
 
-.AboutPageManagementBlock__description{
+.AboutPageManagementBlock__description {
+  margin-bottom: 64px;
   font-size: 5rem;
   line-height: 110%;
   font-family: Bebas-Neue;
   font-weight: 700;
   color: var(--color-font-secondaty);
+}
+
+.AboutPageManagementBlock__image {
+  object-fit: cover;
+  width: 100%;
+  max-width: 458px;
+  height: 100%;
+  max-height: 458px;
+  border-radius: 50%;
 }

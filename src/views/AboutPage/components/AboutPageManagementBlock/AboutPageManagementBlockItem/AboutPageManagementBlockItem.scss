@@ -1,3 +1,54 @@
 .AboutPageManagementBlockItem {
+}
 
+.AboutPageManagementBlock__list-item {
+
+  position: relative;
+  cursor: default;
+
+
+  &:hover {
+    .AboutPageManagementBlock__list-item-text {
+      opacity: 1;
+    }
+
+    .AboutPageManagementBlock__list-item-number {
+      opacity: 1;
+    }
+
+    .AboutPageManagementBlock__list-item-image-wr {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+.AboutPageManagementBlock__list-item-number, .AboutPageManagementBlock__list-item-text {
+  transition: opacity .2s ease;
+}
+
+.AboutPageManagementBlock__list-item-number {
+  color: var(--color-font-secondaty);
+  opacity: 0;
+  margin-bottom: 10px;
+}
+
+.AboutPageManagementBlock__list-item-text-wr {
+  white-space: nowrap;
+  border-top: 1px solid #FFFFFF0D;
+}
+
+.AboutPageManagementBlock__list-item-text {
+  padding: 8px 0 0;
+
+  font-family: Bebas-Neue;
+  opacity: .2;
+  color: var(--color-font-secondaty);
+  font-size: 8rem;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.AboutPageManagementBlock__list-item:last-child .AboutPageManagementBlock__list-item-text-wr {
+  border-bottom: 1px solid #FFFFFF0D;
 }

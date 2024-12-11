@@ -1,13 +1,13 @@
 <template>
   <div class="AboutPageManagementBlockItem">
     <li
-      class="ProjectsList__list-item"
+      class="AboutPageManagementBlock__list-item"
       @mouseenter="toggleTrue"
       @mouseleave="toggleFalse"
     >
-      <span class="ProjectsList__list-item-number">{{ description }}</span>
-      <p class="ProjectsList__list-item-text-wr">
-        <span class="ProjectsList__list-item-text"> {{ title }} </span>
+      <span class="AboutPageManagementBlock__list-item-number">{{ description }}</span>
+      <p class="AboutPageManagementBlock__list-item-text-wr">
+        <span class="AboutPageManagementBlock__list-item-text"> {{ title }} </span>
       </p>
     </li>
   </div>

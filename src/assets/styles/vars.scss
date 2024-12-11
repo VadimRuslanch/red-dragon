@@ -28,8 +28,8 @@
 
   /* --------- Heading --------- */
   --family-font-heading: --;
-  --size-font-main: 18.875rem;
-  --size-font-nav: 4.375rem;
+  --size-font-main: clamp(14rem, 11.737rem + 6.798vw, 18.875rem);
+  --size-font-nav: clamp(2.5rem, 0.921rem + 3.289vw, 4.375rem);
 
   /* --------- UI unit elements --------- */
   --color-ui-unit: #222222;

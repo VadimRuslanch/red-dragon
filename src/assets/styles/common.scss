@@ -6,8 +6,12 @@ html {
   color: var(--color-font-primary);
   font-family: Bebas-Neue, sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   scroll-behavior: smooth;
+  @media screen and (min-width: 1680px) {
+    font-size: 16px;
+
+  }
 }
 
 body {
@@ -52,4 +56,5 @@ main {
 .page, .container {
   max-width: 1720px;
   margin: 0 auto;
+  padding: 0 24px;
 }
