@@ -48,16 +48,16 @@ const splitText = (element: HTMLElement) => {
     .join('');
 };
 
-
 // Функция для обновления анимации в зависимости от скролла
 const updateAnimation = (element: HTMLElement, progress: number) => {
   const spans = element.querySelectorAll('span.new');
   spans.forEach((span, i) => {
+    const spanElement = span as HTMLElement; // Приведение типа
     const spanProgress = (i + 1) / spans.length; // Прогресс появления текущей буквы
     if (progress >= spanProgress) {
-      span.style.opacity = '1';
+      spanElement.style.opacity = '1';
     } else {
-      span.style.opacity = '.1';
+      spanElement.style.opacity = '.1';
     }
   });
 };
