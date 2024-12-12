@@ -1,6 +1,5 @@
 <template>
   <div class="PreviewBlock">
-
     <div class="page">
       <div class="PreviewBlock__preview">
         <div
@@ -13,6 +12,10 @@
         <section
           class="PreviewBlock__preview-item PreviewBlock__preview-item--center"
         >
+          <h1 class="Info__title Info__title--mobile">
+            <span>КРАСНЫЙ</span>
+            ДРАКОН
+          </h1>
           <h2 class="PreviewBlock__preview-center-title">
             ФОНД «КРАСНЫЙ ДРАКОН»
           </h2>

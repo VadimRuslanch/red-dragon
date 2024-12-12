@@ -1,5 +1,7 @@
 <template>
-  <button class="ButtonDefault">Связаться с нами</button>
+  <button @click="$emit('toggleModal')" class="ButtonDefault">
+    Связаться с нами
+  </button>
 </template>
 
 <script setup lang="ts">

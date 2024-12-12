@@ -3,10 +3,15 @@
 
   & .page {
     display: grid;
-    grid-template-columns: 250px 62%;
-    grid-column-gap: 100px;
-    justify-content: space-between;
-    align-items: flex-start;
+    gap: 64px;
+
+    @media screen and (min-width: 920px) {
+      grid-template-columns: 250px 62%;
+      grid-column-gap: 100px;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
 
     @media screen and (min-width: 1020px) {
       grid-column-gap: 180px;

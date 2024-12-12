@@ -1,6 +1,10 @@
 .PreviewBlock {
-  padding: 180px 0 148px;
+  padding: 200px 0 64px;
   background: linear-gradient(#ececec, #c7c7c7);
+
+  @media screen and (min-width: 960px) {
+    padding: 180px 0 148px;
+  }
 
   @media screen and (min-width: 1680px) {
     padding: 220px 0 148px;
@@ -8,12 +12,16 @@
 }
 
 .PreviewBlock__preview {
-  display: grid;
-  grid-template-columns: 33% 33% 20%;
-  justify-content: space-between;
-  gap: 46px;
-  align-items: flex-end;
-  margin-bottom: 120px;
+  margin-bottom: 64px;
+
+  @media screen and (min-width: 960px) {
+    display: grid;
+    grid-template-columns: 33% 33% 20%;
+    justify-content: space-between;
+    gap: 46px;
+    align-items: flex-end;
+    margin-bottom: 120px;
+  }
   @media screen and (min-width: 1680px) {
     grid-template-columns: max(570px) max(570px) 395px;
   }
@@ -26,11 +34,24 @@
   height: 100%;
 }
 
+.PreviewBlock__preview-item--left, .PreviewBlock__preview-item--right{
+  display: none;
+  @media screen and (min-width: 960px) {
+    display: flex;
+  }
+}
+
+
 .PreviewBlock__preview-center-title {
   font-size: clamp(2rem, 0.316rem + 3.509vw, 4rem);
+  display: none;
+  @media screen and (min-width: 960px) {
+    display: inline-block;
+  }
 }
 
 .PreviewBlock__preview-center-description {
+  font-size: 1.5rem;
   margin: 20px 0 60px;
   @media screen and (min-width: 1280px) {
     margin: 20px 0 90px;

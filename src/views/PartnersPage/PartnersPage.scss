@@ -1,2 +1,55 @@
-.PartnersPage {
+.PartnersPage.page {
+  padding: 200px 0 0;
+
 }
+
+.PartnersPage-wr{
+  margin-top: 64px;
+  display: grid;
+  gap: 180px;
+}
+
+.PartnersPage__preview {
+  display: flex;
+}
+
+.PartnersPage__preview__right {
+
+}
+
+.PartnersPage__bottom {
+  margin: 40px 0;
+  display: grid;
+  gap: 40px;
+  justify-content: space-between;
+
+  @media screen and (min-width: 520px) {
+    grid-template-columns: 168px 168px 168px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 64px 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin: 64px 0 130px;
+  }
+}
+
+.PartnersPage__number {
+  font-size: 5rem;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 520px) {
+    font-size: 4.5rem;
+  }
+}
+
+.PartnersPage__description {
+  font-size: 1.5rem;
+  line-height: 110%;
+  @media screen and (max-width: 520px) {
+    width: 60%;
+  }
+}
+

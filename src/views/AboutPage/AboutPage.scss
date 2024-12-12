@@ -9,10 +9,6 @@
     justify-content: space-between;
   }
 
-  & .TitlePage {
-    color: rgba(239, 71, 81, 1);
-  }
-
   & .AboutPage__description {
     color: var(--color-font-primary);
     max-width: 85%;
@@ -46,6 +42,10 @@
   display: flex;
   justify-content: flex-end;
   padding: 120px 0 180px;
+
+  & .TitlePage {
+    color: var(--color-font-secondaty);
+  }
 }
 
 .AboutPage__target-info {

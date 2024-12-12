@@ -1,5 +1,7 @@
 <template>
-  <div class="ModalOverlay"></div>
+  <div class="ModalOverlay">
+    <slot />
+  </div>
 </template>
 
 <script setup lang="ts">

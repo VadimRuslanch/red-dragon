@@ -5,11 +5,10 @@
         >Руководство фонда
       </span>
 
-      <div class="AboutPageManagementBlock__info"   >
-		<Transition>
-		  <img class="AboutPageManagementBlock__image" :src="image" />
-		</Transition>
-
+      <div class="AboutPageManagementBlock__info">
+        <Transition>
+          <img class="AboutPageManagementBlock__image" :src="image" />
+        </Transition>
 
         <ul class="AboutPageManagementBlock__list">
           <AboutPageManagementBlockItem
@@ -29,7 +28,9 @@ import './AboutPageManagementBlock.scss';
 import { computed } from 'vue';
 import AboutPageManagementBlockItem from '@/views/AboutPage/components/AboutPageManagementBlock/AboutPageManagementBlockItem/AboutPageManagementBlockItem.vue';
 import { ref } from '@vue/runtime-dom';
+
 const indexCurrentSlide = ref<number>(0);
+
 interface ListArray {
   id: number;
   title: string;
@@ -40,38 +41,50 @@ interface ListArray {
 const listArray: ListArray[] = [
   {
     id: 1,
-    title: 'Александров Андрей',
-    description: 'Руководитель фонда',
+    title: 'Стофарандова Наталия',
+    description: 'Президент фонда',
     image: '/images/manager.jpg',
   },
   {
     id: 2,
-    title: 'Плотникова марина',
-    description: 'Руководитель фонда',
+    title: 'Уруймагов Петр',
+    description: 'Вице-президент фонда',
     image: '/images/first.jpg',
   },
   {
     id: 3,
-    title: 'Черных анастасия',
-    description: 'Руководитель фонда',
+    title: 'Селезнева Анастасия',
+    description: 'PR директор',
     image: '/images/manager.jpg',
   },
   {
     id: 4,
-    title: 'Воробьев никита',
-    description: 'Руководитель фонда',
+    title: 'Евгений Уваров',
+    description: 'Руководитель проекта "Спорт"',
     image: '/images/manager.jpg',
   },
   {
     id: 5,
-    title: 'Дружинникова наталья',
-    description: 'Руководитель фонда',
+    title: 'Снегур Марина',
+    description: 'Руководитель проекта "Искусство"',
     image: '/images/manager.jpg',
   },
   {
     id: 6,
-    title: 'Красников алексей',
-    description: 'Руководитель фонда',
+    title: 'Самедова Белла',
+    description: 'Руководитель проекта "Музыка"',
+    image: '/images/manager.jpg',
+  },
+  {
+    id: 6,
+    title: 'Чекрызов Дмитрий',
+    description: 'Руководитель проекта "Технологии"',
+    image: '/images/manager.jpg',
+  },
+  {
+    id: 6,
+    title: 'Искендерова Алина ',
+    description: 'Руководитель проекта "Мода"',
     image: '/images/manager.jpg',
   },
 ];

@@ -1,6 +1,6 @@
 <template>
   <section class="Info">
-    <h1 class="Info__title">
+    <h1 class="Info__title Info__title--desktop">
       <span>КРАСНЫЙ</span>
       ДРАКОН
     </h1>

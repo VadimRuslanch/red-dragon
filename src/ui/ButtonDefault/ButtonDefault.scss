@@ -1,4 +1,5 @@
 .ButtonDefault {
+  transition: background-color .4s ease;
   font-family: Inter;
   padding: 0 24px;
   background-color: var(--color-ui-element-background);
@@ -6,4 +7,8 @@
   border-radius: var(--border-radius-ui-element);
   height: 56px;
   cursor: pointer;
+
+  &:hover{
+    background-color: var(--color-accent);
+  }
 }

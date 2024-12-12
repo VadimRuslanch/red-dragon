@@ -1,0 +1,52 @@
+.PartnersPagePreviewBlock {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: .6fr auto;
+}
+
+.PartnersPagePreviewBlock__right {
+  overflow: hidden;
+  max-width: 1068px;
+  max-height: 1141px;
+  display: grid;
+  gap: 62px;
+}
+
+.PartnersPagePreviewBlock__left{
+  opacity: .2;
+  display: grid;
+  gap: 64px;
+  align-self: flex-end;
+}
+
+.PartnersPagePreviewBlock__title {
+  font-weight: 700;
+  max-width: 50%;
+  color: var(--color-font-secondaty);
+  font-size: clamp(1.5rem, 0.786rem + 3.571vw, 2.5rem);
+  line-height: 140%;
+}
+
+.PartnersPagePreviewBlock__number{
+  font-size: 4.5rem;
+  line-height: 100%;
+  color: var(--color-font-secondaty);
+}
+
+.PartnersPagePreviewBlock__description {
+  font-size: clamp(1.125rem, 0.857rem + 1.339vw, 1.5rem);
+  font-weight: 400;
+  font-family: Inter;
+  max-width: 50%;
+  color: var(--color-font-secondaty);
+  line-height: 150%;
+}
+
+.PartnersPagePreviewBlock__image {
+  object-fit: cover;
+  width: 100%;
+  max-height: 785px;
+}
+
+
+

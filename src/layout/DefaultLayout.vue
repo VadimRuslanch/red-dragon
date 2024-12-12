@@ -1,9 +1,9 @@
 <template>
-  <HeaderComponent/>
+  <HeaderComponent />
   <main>
-    <slot/>
+    <slot />
   </main>
-  <FooterComponent/>
+  <FooterComponent />
 </template>
 
 <script setup lang="ts">

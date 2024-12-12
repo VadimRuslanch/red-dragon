@@ -17,8 +17,11 @@
   grid-area: middle;
   display: flex;
   justify-content: space-between;
-  max-height: 271px;
+  flex-direction: column;
   margin-bottom: 128px;
+  @media screen and (min-width: 1280px) {
+    flex-direction: row;
+  }
 }
 
 .Footer__bottom {
@@ -26,34 +29,46 @@
 }
 
 .Footer__middle-left {
-  width: 60%;
+  margin-bottom: 128px;
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 0;
+    width: 60%;
+  }
 }
 
 .Footer__middle-left-title {
   font-family: Bebas-Neue;
   font-weight: 700;
   line-height: 110%;
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 1.429rem + 5.357vw, 4rem);
   color: var(--color-font-secondaty);
   margin-bottom: 40px;
 }
 
 .Footer__middle-left-description {
-  width: 70%;
   font-family: Inter;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: clamp(1.125rem, 0.857rem + 1.339vw, 1.5rem);
   color: var(--color-font-secondaty);
   line-height: 150%;
+
+  @media screen and (min-width: 1280px) {
+    width: 70%;
+  }
 }
 
 .Footer__middle-right {
-  width: 400px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  text-align: right;
-  align-items: flex-end;
+  text-align: left;
+  gap: 24px;
+
+  @media screen and (min-width: 1280px) {
+    text-align: right;
+    align-items: flex-end;
+  }
 }
 
 .Footer__middle-right-item {
@@ -61,7 +76,7 @@
   width: fit-content;
   font-family: Inter;
   color: var(--color-font-secondaty);
-  font-size: 1.5rem;
+  font-size: clamp(1.125rem, 0.857rem + 1.339vw, 1.5rem);
   line-height: 150%;
 
   &:hover {
@@ -94,14 +109,25 @@
 
 .Footer__middle-right-socials-item-whatsapp {
   &:hover svg {
-    fill: #43d854;
+    fill: #27a7e7;
   }
 }
 
 .Footer__bottom {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between;
+  gap: 40px;
+  @media screen and (min-width: 1280px) {
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+.Footer__bottom-left{
+  display: grid;
+  gap: 24px;
 }
 
 .Footer__bottom-left-copy {

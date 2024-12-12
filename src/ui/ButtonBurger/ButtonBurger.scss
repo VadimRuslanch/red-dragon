@@ -1,8 +1,13 @@
 $lineThickness: 4px;
 $transitionSpeed: .2s;
 $transitionEasing: ease;
+.ButtonBurger-wr{
+  width: 63px;
+  height: 63px;
 
+}
 .ButtonBurger {
+  margin: 0 auto;
   cursor: pointer;
   position: relative;
   display: block;
