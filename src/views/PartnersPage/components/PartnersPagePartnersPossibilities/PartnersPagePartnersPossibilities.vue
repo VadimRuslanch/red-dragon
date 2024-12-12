@@ -3,12 +3,15 @@
     <span class="PartnersPagePartnersPossibilities__title"
       >Возможности для спонсора</span
     >
-    <div class="PartnersPagePartnersPossibilities__content"></div>
+    <div class="PartnersPagePartnersPossibilities__content">
+      <DropDown v-for="item in listArray" :title="item.title" />
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import './PartnersPagePartnersPossibilities.scss';
+import DropDown from '@/views/PartnersPage/components/PartnersPagePartnersPossibilities/DropDown.vue';
 
 const listArray = [
   {
