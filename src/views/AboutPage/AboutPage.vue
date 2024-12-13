@@ -35,7 +35,7 @@
           />
         </template>
       </div>
-      <!--      <AboutPageManagementBlock />-->
+      <AboutPageManagementBlock />
     </div>
     <SupportFond />
   </div>
