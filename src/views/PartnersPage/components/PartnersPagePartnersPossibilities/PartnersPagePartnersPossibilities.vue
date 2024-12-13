@@ -1,17 +1,17 @@
 <template>
   <div class="PartnersPagePartnersPossibilities">
-    <span class="PartnersPagePartnersPossibilities__title"
-      >Возможности для спонсора</span
-    >
+    <TitleInnerBlock title="Возможности для спонсора" />
+    <span class="PartnersPagePartnersPossibilities__title"></span>
     <div class="PartnersPagePartnersPossibilities__content">
-      <DropDown v-for="item in listArray" :title="item.title" />
+      <ProjectsPageDropDown v-for="item in listArray" :title="item.title" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import './PartnersPagePartnersPossibilities.scss';
-import DropDown from '@/views/PartnersPage/components/PartnersPagePartnersPossibilities/DropDown.vue';
+import ProjectsPageDropDown from '@/views/PartnersPage/components/PartnersPagePartnersPossibilities/ProjectsPageDropDown/ProjectsPageDropDown.vue';
+import TitleInnerBlock from '@/components/TitleInnerBlock/TitleInnerBlock.vue';
 
 const listArray = [
   {

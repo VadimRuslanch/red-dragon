@@ -1,5 +1,6 @@
 .PartnersPagePartnersList {
   display: grid;
   gap: 20px;
+  justify-content: center;
   grid-template-columns: repeat(auto-fill, 270px);
 }

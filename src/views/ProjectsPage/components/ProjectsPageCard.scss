@@ -1,12 +1,22 @@
 .ProjectsPageCard {
+  display: grid;
   min-width: 100%;
   background-color: rgba(255, 255, 255, 0.04);
+  grid-template-rows: auto 1fr;
 }
 
 .ProjectsPageCard__info {
   padding: 24px;
   display: grid;
   gap: 40px;
+}
+
+.ProjectsPageCard__image{
+  width: 100%;
+  object-position: 20%;
+  object-fit: cover;
+  height: 100%;
+  max-height: 320px;
 }
 
 .ProjectsPageCard__title {
@@ -21,6 +31,7 @@
   color: var(--color-font-secondaty);
   font-family: Inter;
   font-size: 1.25rem;
+  height: 2.5em;
   line-height: 120%;
   font-weight: 400;
 

@@ -1,5 +1,7 @@
 <template>
-  <button class="ButtonMainCallBack">Поддержать фонд</button>
+  <button class="ButtonMainCallBack" @click="$emit('toggleModal')">
+    Поддержать фонд
+  </button>
 </template>
 
 <script setup lang="ts">

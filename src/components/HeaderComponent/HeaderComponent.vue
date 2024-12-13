@@ -14,13 +14,16 @@
 
     <Teleport to="body">
       <ModalOverlay v-if="isActive">
-        <CallBackComponent @toggleModal="toggleModal" />
+        <CallBackComponent
+          v-scroll-lock="isActive"
+          @toggleModal="toggleModal"
+        />
       </ModalOverlay>
     </Teleport>
 
     <Teleport to="body">
       <ModalOverlay v-if="isActiveManu">
-        <MainManu @toggleMenu="toggleMenu" />
+        <MainManu v-scroll-lock="isActiveManu" @toggleMenu="toggleMenu" />
       </ModalOverlay>
     </Teleport>
   </header>
@@ -44,7 +47,7 @@ const isActive = ref<boolean>(false);
 const isActiveManu = ref<boolean>(false);
 
 watch(
-  () => route.path, // Отслеживаем изменение пути
+  () => route.path,
   () => {
     isActiveManu.value = false;
   }
@@ -55,20 +58,25 @@ let lastScrollY = 0;
 
 const toggleModal = () => {
   isActive.value = !isActive.value;
+  console.log(isActive.value);
 };
+
+// const closeModal = () => {
+//   isActive.value = false;
+// };
 
 const toggleMenu = () => {
   isActiveManu.value = !isActiveManu.value;
+  console.log(isActive.value);
 };
 
 const handleScroll = () => {
   const currentScrollY = window.scrollY;
 
-  // Проверяем направление скролла
   if (currentScrollY > lastScrollY && currentScrollY > 50) {
-    isHidden.value = true; // Скролл вниз - скрыть
+    isHidden.value = true;
   } else {
-    isHidden.value = false; // Скролл вверх - показать
+    isHidden.value = false;
   }
 
   lastScrollY = currentScrollY;

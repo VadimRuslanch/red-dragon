@@ -16,6 +16,7 @@
     <Teleport to="body">
       <ModalOverlay v-if="isActiveModal">
         <ProjectModal
+          v-scroll-lock="isActiveModal"
           v-if="currentProject"
           :data="currentProject"
           @toggleModal="toggleModal"

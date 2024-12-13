@@ -1,13 +1,13 @@
 <template>
   <div class="DropDown">
     <details>
-      <summary>{{ title }}</summary>
+      <summary class="DropDown__title">{{ title }}</summary>
     </details>
   </div>
 </template>
 
 <script setup lang="ts">
-import './DropDown.scss';
+import './ProjectsPageDropDown.scss';
 
 const { title } = defineProps<{ title: string }>();
 </script>
