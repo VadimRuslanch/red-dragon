@@ -3,7 +3,7 @@
     <div class="AboutPage__mission">
       <div class="page">
         <section class="AboutPage__mission-info">
-          <TitlePage :title="'миссия'" />
+          <TitlePage title="миссия" />
           <p class="AboutPage__description">
             поддержка культурных инициатив, повышение культурной осведомленности
             и создание условий для участия молодежи в культурных событиях,
@@ -14,40 +14,41 @@
       </div>
     </div>
     <div class="page">
-      <div class="AboutPage__target">
-        <section class="AboutPage__target-info">
-          <TitlePage :title="'цель'" />
-          <p class="AboutPage__description">
-            Фонд реализует программы социальной политики, поддерживающие
-            талантливую молодежь и предоставляющие возможности для
-            самореализации, формируя общество, где культура способствует
-            гармоничному развитию.
-          </p>
-        </section>
-      </div>
-      <h3 class="AboutPage__target-title">Задачи фонда</h3>
+      <section class="AboutPage__target">
+        <TitlePage :title="'цель'" />
+        <p class="AboutPage__description">
+          Фонд реализует программы социальной политики, поддерживающие
+          талантливую молодежь и предоставляющие возможности для самореализации,
+          формируя общество, где культура способствует гармоничному развитию.
+        </p>
+      </section>
+      <TitleInnerBlock title="Задачи фонда" />
       <div class="AboutPage__target-list">
-        <AboutPageCard
-          v-for="card in cardArray"
-          :key="card.id"
-          :title="card.title"
-          :description="card.description"
-          :background="card.background"
-          :position="card.position"
-        />
+        <template v-for="card in cardArray" :key="card.id">
+          <AboutPageCard
+            v-if="!card.position"
+            :title="card.title"
+            :description="card.description"
+            :background="card.background"
+            :position="card.position"
+            :mobile="card.mobile"
+          />
+        </template>
       </div>
-      <AboutPageManagementBlock />
+      <!--      <AboutPageManagementBlock />-->
     </div>
     <SupportFond />
   </div>
 </template>
 
 <script setup lang="ts">
+import { ref, onMounted, onUnmounted } from 'vue';
 import './AboutPage.scss';
 import TitlePage from '@/components/TitlePage/TitlePage.vue';
 import AboutPageCard from '@/views/AboutPage/components/AboutPageCard/AboutPageCard.vue';
 import SupportFond from '@/components/SupportFond/SupportFond.vue';
 import AboutPageManagementBlock from '@/views/AboutPage/components/AboutPageManagementBlock/AboutPageManagementBlock.vue';
+import TitleInnerBlock from '@/components/TitleInnerBlock/TitleInnerBlock.vue';
 
 const cardArray = [
   {
@@ -64,6 +65,7 @@ const cardArray = [
     background: 'rgba(239, 71, 81, 1)',
   },
   {
+    mobile: 'none',
     position: {
       top: '56%',
       right: '0',
@@ -77,6 +79,7 @@ const cardArray = [
     background: 'rgba(255, 255, 255, 0.04)',
   },
   {
+    mobile: 'none',
     position: {
       top: '-26%',
       right: '33%',
@@ -109,6 +112,7 @@ const cardArray = [
     background: 'rgba(255, 255, 255, 0.04)',
   },
   {
+    mobile: 'none',
     position: {
       top: '-23%',
       right: '-38%',
@@ -141,6 +145,7 @@ const cardArray = [
     background: 'rgba(255, 255, 255, 0.04)',
   },
   {
+    mobile: 'none',
     position: {
       top: '46%',
       right: '33%',
@@ -153,4 +158,19 @@ const cardArray = [
     background: 'rgba(255, 255, 255, 0.04)',
   },
 ];
+
+const isWideScreen = ref(false);
+
+function updateScreenWidth() {
+  isWideScreen.value = window.matchMedia('(min-width: 1281px)').matches;
+}
+
+onMounted(() => {
+  updateScreenWidth();
+  window.addEventListener('resize', updateScreenWidth);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('resize', updateScreenWidth);
+});
 </script>

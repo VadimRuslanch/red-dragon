@@ -23,6 +23,7 @@
 }
 
 .NavigationMain__item-title {
+  color: var(--color-font-primary);
   transition: opacity var(--transition-properties);
   opacity: 0.1;
   font-size: var(--size-font-nav);

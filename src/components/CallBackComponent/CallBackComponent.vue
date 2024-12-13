@@ -14,9 +14,7 @@
         Напишите нам и мы ответим на все ваши вопросы максимально быстро
       </span>
       <form class="CallBackComponent__form" @submit.prevent="submit">
-        <select class="CallBackComponent__select" name="city" id="city-select">
-          <option class="CallBackComponent__select-item" value=""></option>
-        </select>
+        <Dropdown :options="listArray" v-model="selectedProject" />
         <label class="CallBackComponent__input-label">
           <input class="CallBackComponent__input" placeholder="ФИО" />
         </label>
@@ -51,6 +49,53 @@
 <script setup lang="ts">
 import './CallBackComponent.scss';
 import IconClose from '@/assets/svg/icon-close.svg';
+import Dropdown from '@/ui/DropDown/DropDown.vue';
+import { ref } from 'vue';
+import { onUpdated } from '@vue/runtime-dom';
+
+const selectedProject = ref<string>('');
+
+onUpdated(() => {
+  console.log(selectedProject.value);
+});
+
+const listArray = [
+  {
+    id: 1,
+    title: 'Проект "Мода"',
+    value: 'fashion',
+  },
+  {
+    id: 12,
+    title: 'Проект "Искусство"',
+    value: 'art',
+  },
+  {
+    id: 14,
+    title: 'Проект "Музыка"',
+    value: 'music',
+  },
+  {
+    id: 15,
+    title: 'Проект "Красота"',
+    value: 'beauty',
+  },
+  {
+    id: 16,
+    title: 'Проект "Спорт"',
+    value: 'sport',
+  },
+  {
+    id: 17,
+    title: 'Проект "Технологии"',
+    value: 'tech',
+  },
+  {
+    id: 18,
+    title: 'Общее развитие фонда',
+    value: 'other',
+  },
+];
 
 const submit = () => {};
 </script>

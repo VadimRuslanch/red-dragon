@@ -18,8 +18,9 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  margin-bottom: 128px;
+  margin-bottom: 64px;
   @media screen and (min-width: 1280px) {
+    margin-bottom: 128px;
     flex-direction: row;
   }
 }
@@ -29,8 +30,9 @@
 }
 
 .Footer__middle-left {
-  margin-bottom: 128px;
+  margin-bottom: 64px;
   @media screen and (min-width: 1280px) {
+    margin-bottom: 128px;
     margin-bottom: 0;
     width: 60%;
   }

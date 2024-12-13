@@ -1,22 +1,35 @@
 .AboutPage__mission {
   overflow: hidden;
-  padding: 220px 0 168px;
+  padding: 152px 0 15px;
   background: linear-gradient(#ececec, #c7c7c7);
+
+  @media screen and (min-width: 768px) {
+    padding: 200px 0 27px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 252px 0 168px;
+  }
 
   & .page {
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
   }
 
   & .AboutPage__description {
     color: var(--color-font-primary);
-    max-width: 85%;
+    @media screen and (min-width: 786px) {
+      max-width: 85%;
+    }
   }
 }
 
 .AboutPage__mission-info {
-  width: 50%;
+  @media screen and (min-width: 1280px) {
+    width: 50%;
+  }
 }
 
 .AboutPage__description {
@@ -24,36 +37,45 @@
   margin-top: 24px;
   font-family: Bebas-Neue;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 0.786rem + 3.571vw, 2.5rem);
   line-height: 140%;
 }
 
 .AboutPage__mission-image {
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: rotateZ(8deg);
   object-fit: cover;
-  width: 737px;
-  height: 752px;
+  width: 100%;
+  margin-top: 40px;
+  @media screen and (min-width: 768px) {
+    margin-top: 64px;
+    max-width: 728px;
+    height: 875px;
+  }
+  @media screen and (min-width: 1330px) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotateZ(8deg);
+  }
 }
 
 .AboutPage__target {
-  display: flex;
-  justify-content: flex-end;
-  padding: 120px 0 180px;
+  padding: 80px 0 80px;
+  @media screen and (min-width: 768px) {
+    padding: 120px 0 180px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 55%;
+    margin-left: auto;
+  }
 
   & .TitlePage {
     color: var(--color-font-secondaty);
   }
 }
 
-.AboutPage__target-info {
-  width: 55%;
-}
-
 .AboutPage__target-title {
-  margin-bottom: 64px;
+
   color: var(--color-font-secondaty);
   font-size: 5rem;
   line-height: 110%;
@@ -65,6 +87,10 @@
   margin-bottom: 180px;
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 415px));
   grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  
+  @media screen and (min-width: 1280px) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 415px));
+  }
 }
