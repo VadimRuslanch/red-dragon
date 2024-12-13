@@ -61,6 +61,7 @@
 
 
 .ProjectModal__button {
+  transition: background-color .4s ease;
   padding: 16px 24px;
   background-color: var(--color-accent);
   width: fit-content;
@@ -70,5 +71,7 @@
   font-family: Inter;
   line-height: 120%;
   font-size: 1.25rem;
-
+  &:hover{
+    background-color: var(--color-font-primary);
+  }
 }

@@ -1,24 +1,21 @@
 <template>
   <div class="AboutPageManagementBlock">
-    <div class="page">
-      <span class="AboutPageManagementBlock__description"
-        >Руководство фонда
-      </span>
+    <TitleInnerBlock title="Руководство фонда" />
 
-      <div class="AboutPageManagementBlock__info">
-        <Transition>
-          <img class="AboutPageManagementBlock__image" :src="image" />
-        </Transition>
+    <div class="AboutPageManagementBlock__info">
+      <Transition>
+        <img class="AboutPageManagementBlock__image" :src="image" />
+      </Transition>
 
-        <ul class="AboutPageManagementBlock__list">
-          <AboutPageManagementBlockItem
-            @mouseenter="setSlide(index)"
-            v-for="(item, index) in listArray"
-            :title="item.title"
-            :description="item.description"
-          />
-        </ul>
-      </div>
+      <ul class="AboutPageManagementBlock__list">
+        <AboutPageManagementBlockItem
+          @mouseenter="setSlide(index)"
+          v-for="(item, index) in listArray"
+          :title="item.title"
+          :description="item.description"
+          :image="item.image"
+        />
+      </ul>
     </div>
   </div>
 </template>
@@ -28,6 +25,7 @@ import './AboutPageManagementBlock.scss';
 import { computed } from 'vue';
 import AboutPageManagementBlockItem from '@/views/AboutPage/components/AboutPageManagementBlock/AboutPageManagementBlockItem/AboutPageManagementBlockItem.vue';
 import { ref } from '@vue/runtime-dom';
+import TitleInnerBlock from '@/components/TitleInnerBlock/TitleInnerBlock.vue';
 
 const indexCurrentSlide = ref<number>(0);
 

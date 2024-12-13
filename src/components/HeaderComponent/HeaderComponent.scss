@@ -6,6 +6,7 @@
   padding: 26px 0 26px;
   z-index: 5;
   right: 0;
+  background-color: rgba(222, 222, 222, 1);
 
   &.hidden {
     transform: translateY(-100%);
@@ -28,15 +29,6 @@
     @media screen and (min-width: 1680px) {
       grid-template-columns: 570px 570px 395px;
     }
-  }
-}
-
-.Header__logo-container{
-  width: 118px;
-  height: 48px;
-  @media screen and (min-width: 520px) {
-    width: 224px;
-    height: 87px;
   }
 }
 

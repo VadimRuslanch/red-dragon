@@ -60,7 +60,9 @@
             <IconWhatsapp />
           </a>
         </div>
-        <a href="tel:+78009589878" target="_blank">8 800 958 98 78</a>
+        <a class="MainManu-bottom__tel" href="tel:+78009589878" target="_blank"
+          >8 800 958 98 78</a
+        >
       </div>
     </div>
   </div>

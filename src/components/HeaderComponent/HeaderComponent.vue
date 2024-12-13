@@ -2,7 +2,7 @@
   <header class="Header" :class="{ hidden: isHidden }">
     <div class="container">
       <div class="Header__logo">
-        <LogoComponent class="Header__logo-container" />
+        <LogoComponent />
       </div>
       <div class="Header__button">
         <ButtonDefault @toggleModal="toggleModal" />

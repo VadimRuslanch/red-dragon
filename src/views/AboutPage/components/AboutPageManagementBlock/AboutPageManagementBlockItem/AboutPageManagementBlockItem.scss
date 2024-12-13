@@ -20,6 +20,9 @@
       transform: translateY(0);
       opacity: 1;
     }
+    .AboutPageManagementBlockItem__image-wr{
+      grid-template-rows: 1fr;
+    }
   }
 }
 
@@ -28,6 +31,8 @@
 }
 
 .AboutPageManagementBlock__list-item-number {
+  font-family: Inter;
+  font-size: clamp(1.25rem, 1.071rem + 0.893vw, 1.5rem);
   color: var(--color-font-secondaty);
   opacity: 0;
   margin-bottom: 10px;
@@ -44,11 +49,29 @@
   font-family: Bebas-Neue;
   opacity: .2;
   color: var(--color-font-secondaty);
-  font-size: 8rem;
+  font-size: clamp(2.5rem, 0.268rem + 11.161vw, 5.625rem);
   font-weight: 700;
   line-height: 100%;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 8rem;
+  }
 }
 
 .AboutPageManagementBlockItem:last-child .AboutPageManagementBlock__list-item-text-wr {
   border-bottom: 1px solid #FFFFFF0D;
+}
+
+.AboutPageManagementBlockItem__image-wr {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition-duration: .4s;
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+
+}
+
+.AboutPageManagementBlockItem__image-content{
+  overflow: hidden;
 }

@@ -5,10 +5,19 @@
       @mouseenter="toggleTrue"
       @mouseleave="toggleFalse"
     >
-      <span class="AboutPageManagementBlock__list-item-number">{{ description }}</span>
+      <span class="AboutPageManagementBlock__list-item-number">{{
+        description
+      }}</span>
       <p class="AboutPageManagementBlock__list-item-text-wr">
-        <span class="AboutPageManagementBlock__list-item-text"> {{ title }} </span>
+        <span class="AboutPageManagementBlock__list-item-text">
+          {{ title }}
+        </span>
       </p>
+      <div class="AboutPageManagementBlockItem__image-wr">
+        <div class="AboutPageManagementBlockItem__image-content">
+          <img class="AboutPageManagementBlockItem__image" :src="image" />
+        </div>
+      </div>
     </li>
   </div>
 </template>
@@ -27,8 +36,9 @@ const toggleTrue = () => {
   isActive.value = true;
 };
 
-const { title, description } = defineProps<{
+const { title, description, image } = defineProps<{
   title: string;
   description: string;
+  image: string;
 }>();
 </script>

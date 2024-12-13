@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="AboutPageCard"
-    :style="`--color-bg: ${background}; display: ${mobile};`"
-  >
+  <div class="AboutPageCard" :style="`--color-bg: ${background};`">
     <h4 class="AboutPageCard__title">{{ title }}</h4>
     <span class="AboutPageCard__description">{{ description }}</span>
     <IconDragon
@@ -29,6 +26,5 @@ const { title, description, background, position } = defineProps<{
   description?: string;
   background?: string;
   position?: Position;
-  mobile?: string;
 }>();
 </script>

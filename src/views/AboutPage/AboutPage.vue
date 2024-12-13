@@ -26,12 +26,11 @@
       <div class="AboutPage__target-list">
         <template v-for="card in cardArray" :key="card.id">
           <AboutPageCard
-            v-if="!card.position"
+            v-if="!card.position || isWideScreen"
             :title="card.title"
             :description="card.description"
             :background="card.background"
             :position="card.position"
-            :mobile="card.mobile"
           />
         </template>
       </div>
@@ -65,7 +64,6 @@ const cardArray = [
     background: 'rgba(239, 71, 81, 1)',
   },
   {
-    mobile: 'none',
     position: {
       top: '56%',
       right: '0',
@@ -79,7 +77,6 @@ const cardArray = [
     background: 'rgba(255, 255, 255, 0.04)',
   },
   {
-    mobile: 'none',
     position: {
       top: '-26%',
       right: '33%',
@@ -112,7 +109,6 @@ const cardArray = [
     background: 'rgba(255, 255, 255, 0.04)',
   },
   {
-    mobile: 'none',
     position: {
       top: '-23%',
       right: '-38%',
@@ -145,7 +141,6 @@ const cardArray = [
     background: 'rgba(255, 255, 255, 0.04)',
   },
   {
-    mobile: 'none',
     position: {
       top: '46%',
       right: '33%',

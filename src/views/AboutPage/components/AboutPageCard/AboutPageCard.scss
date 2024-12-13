@@ -11,20 +11,25 @@
   max-width: 415px;
   background-color: rgba(255, 255, 255, 0.04);
 
-  //&:nth-of-type(2n){
-  //  background-color: var(--color-accent);
-  //}
-  
   @media screen and (min-width: 768px) {
     background-color: var(--color-bg);
     padding: 40px;
-
-    &:nth-of-type(odd){
-      background-color: var(--color-accent);
-    }
-
   }
 }
+
+@media screen and (max-width: 768px) {
+  .AboutPage__target-list > .AboutPageCard:nth-of-type(even) {
+    background-color: var(--color-accent); /* Акцентный фон для чётных */
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .AboutPage__target-list > .AboutPageCard:nth-of-type(4n-2),
+  .AboutPage__target-list > .AboutPageCard:nth-of-type(4n-1) {
+    background-color: var(--color-accent);
+  }
+}
+
 
 .AboutPageCard__title {
   font-weight: 700;

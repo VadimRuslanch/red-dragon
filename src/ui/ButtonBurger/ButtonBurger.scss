@@ -1,78 +1,15 @@
-$lineThickness: 4px;
-$transitionSpeed: .2s;
-$transitionEasing: ease;
-.ButtonBurger-wr{
+.ButtonBurger {
   width: 63px;
   height: 63px;
-
-}
-.ButtonBurger {
-  margin: 0 auto;
   cursor: pointer;
-  position: relative;
-  display: block;
-  width: 40px;
-  height: 30px;
   font-size: 0;
-
-  transition: all $transitionSpeed $transitionEasing;
-
-  & span {
-    display: block;
-    height: 100%;
-
-    &:before,
-    &:after {
-      transition: all $transitionSpeed $transitionEasing;
-      border-radius: 553px;
-      content: '';
-      display: block;
-      width: 100%;
-      height: $lineThickness;
-      background: currentColor;
-    }
-
-    &:after {
-      margin-top: 24px;
-    }
-  }
-
-  &:before,
-  &:after {
-    border-radius: 553px;
-    content: '';
-    display: block;
-    width: 100%;
-    height: $lineThickness;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    background: currentColor;
-
-    transform: translate(-50%, -50%);
-    transition: transform $transitionSpeed $transitionEasing;
+  & svg{
+    fill: var(--color-font-primary);
   }
 }
 
 .ButtonBurger:hover {
-  color: var(--color-ui-unit-hover);
-}
-
-.ButtonBurger.active {
-  span {
-    &:before,
-    &:after{
-      background: transparent;
-    }
-  }
-
-  &:before {
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
-
-  &:after {
-    transform: translate(-50%, -50%) rotate(-45deg);
+  & svg {
+    fill: var(--color-accent);
   }
 }
