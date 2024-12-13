@@ -27,7 +27,7 @@
           >
         </li>
         <li class="MainManu__list-item">
-          <RouterLink class="MainManu__list-item-text" to="news"
+          <RouterLink class="MainManu__list-item-text" to="events"
             >мероприятия</RouterLink
           >
         </li>

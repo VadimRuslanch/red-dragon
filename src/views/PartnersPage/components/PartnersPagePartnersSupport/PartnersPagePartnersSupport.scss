@@ -1,3 +1,14 @@
-.PartnersPagePartnersSupport{
+.PartnersPagePartnersSupport {
 
+}
+
+.PartnersPagePartnersSupport__title{
+  @media screen and (min-width: 1280px) {
+    font-size: 5rem;
+    color: var(--color-font-secondaty);
+    line-height: 110%;
+    font-family: Bebas-Neue;
+    font-weight: 700;
+    margin-bottom: 80px;
+  }
 }

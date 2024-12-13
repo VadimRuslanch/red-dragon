@@ -1,7 +1,65 @@
 .DropDown {
-
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  padding: 32px;
 }
 
-.DropDown__title{
+.DropDown__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (min-width: 1280px) {
+    color: var(--color-font-secondaty);
+    font-weight: 700;
+    font-family: Bebas-Neue;
+    font-size: 5rem;
+    line-height: 110%;
+    opacity: .1;
+  }
+}
 
+.DropDown__title_icon{
+  opacity: 0;
+}
+
+.DropDown__inner{
+  margin-top: 24px;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition-duration: 0.4s;
+}
+
+.DropDown__inner-wr{
+  overflow: hidden;
+}
+
+.DropDown__inner-text{
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: Inter;
+  line-height: 150%;
+  color: var(--color-font-secondaty);
+  opacity: .5;
+
+  @media screen and (min-width: 1280px) {
+    max-width: 47%;
+  }
+}
+
+
+
+.DropDown__details[open] {
+  & .DropDown__title, .DropDown__title_icon {
+    opacity: 1;
+  }
+  & .DropDown__inner{
+    grid-template-rows: 1fr;
+  }
+}
+
+
+
+
+
+.DropDown__title, .DropDown__title_icon {
+  transition: opacity .4s ease;
 }

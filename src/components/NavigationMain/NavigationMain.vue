@@ -2,19 +2,19 @@
   <nav>
     <ul class="NavigationMain">
       <li>
-        <NavLink :title="'О фонде'" :link="'about'" />
+        <NavLink title="О фонде" :link="'about'" />
       </li>
       <li>
-        <NavLink :title="'Проекты'" :link="'projects'" />
+        <NavLink title="Проекты" :link="'projects'" />
       </li>
       <li>
-        <NavLink :title="'Новости'" :link="'news'" />
+        <NavLink title="мероприятия" :link="'events'" />
       </li>
       <li>
-        <NavLink :title="'Партнеры'" :link="'partners'" />
+        <NavLink title="Партнеры" :link="'partners'" />
       </li>
       <li>
-        <NavLink :title="'Контакты'" :link="'contacts'" />
+        <NavLink title="Контакты" :link="'contacts'" />
       </li>
     </ul>
   </nav>

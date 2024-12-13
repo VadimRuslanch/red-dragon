@@ -17,7 +17,6 @@
     <Teleport to="body">
       <ModalOverlay v-if="isActive">
         <CallBackComponent
-          v-click-outside="closeModal"
           v-scroll-lock="isActive"
           @toggleModal="toggleModal"
         />
@@ -38,9 +37,5 @@ const isActive = ref<boolean>(false);
 
 const toggleModal = () => {
   isActive.value = !isActive.value;
-};
-
-const closeModal = () => {
-  isActive.value = false;
 };
 </script>

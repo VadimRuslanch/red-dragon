@@ -1,5 +1,7 @@
-.PartnersPage.page {
-  padding-top: 200px;
+.PartnersPage-container {
+  & .page {
+    padding-top: 200px;
+  }
 }
 
 .PartnersPage-wr{

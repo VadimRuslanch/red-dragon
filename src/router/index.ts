@@ -4,7 +4,7 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 import HomePage from '@/views/HomePage/HomePage.vue';
 import AboutPage from '@/views/AboutPage/AboutPage.vue';
 import ProjectsPage from '@/views/ProjectsPage/ProjectsPage.vue';
-import NewsPage from '@/views/NewsPage/NewsPage.vue';
+import EventsPage from '@/views/EventsPage/EventsPage.vue';
 import PartnersPage from '@/views/PartnersPage/PartnersPage.vue';
 import ContactsPage from '@/views/ContactsPage/ContactsPage.vue';
 import NotFoundPage from '@/views/NotFoundPage/NotFoundPage.vue';
@@ -26,9 +26,9 @@ const routes: Array<RouteRecordRaw> = [
     component: ProjectsPage,
   },
   {
-    path: '/news',
-    name: 'News',
-    component: NewsPage,
+    path: '/events',
+    name: 'Events',
+    component: EventsPage,
   },
   {
     path: '/partners',

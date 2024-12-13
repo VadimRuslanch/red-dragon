@@ -3,7 +3,11 @@
     <TitleInnerBlock title="Возможности для спонсора" />
     <span class="PartnersPagePartnersPossibilities__title"></span>
     <div class="PartnersPagePartnersPossibilities__content">
-      <ProjectsPageDropDown v-for="item in listArray" :title="item.title" />
+      <ProjectsPageDropDown
+        v-for="item in listArray"
+        :title="item.title"
+        :description="item.description"
+      />
     </div>
   </div>
 </template>

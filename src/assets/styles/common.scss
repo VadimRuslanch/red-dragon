@@ -42,6 +42,10 @@ span {
   line-height: 100%;
 }
 
+summary{
+  list-style-type: none;
+}
+
 #app {
   display: flex;
   flex: 1;

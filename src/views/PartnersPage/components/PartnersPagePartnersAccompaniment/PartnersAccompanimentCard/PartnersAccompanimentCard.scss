@@ -1,3 +1,31 @@
-.PartnersAccompanimentCard{
+.PartnersAccompanimentCard {
+  width: 100%;
+  height: 166px;
+  background-color: rgba(255, 255, 255, 0.04);
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
 
+.PartnersAccompanimentCard__empty {
+  @media screen and (min-width: 1280px) {
+    background-color: rgba(255, 255, 255, 0.01);
+  }
+}
+
+.PartnersAccompanimentCard__title {
+  font-size: 2.25rem;
+  font-family: Bebas-Neue;
+  font-weight: 700;
+  line-height: 120%;
+  color: var(--color-font-secondaty);
+}
+
+.PartnersAccompanimentCard__number {
+  font-size: 2.25rem;
+  font-family: Bebas-Neue;
+  font-weight: 700;
+  line-height: 120%;
+  color: var(--color-font-secondaty);
+  opacity: .3;
 }
