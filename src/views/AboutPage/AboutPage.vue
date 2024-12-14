@@ -44,7 +44,6 @@ import { ref, onMounted, onUnmounted } from 'vue';
 import './AboutPage.scss';
 import TitlePage from '@/components/TitlePage/TitlePage.vue';
 import AboutPageCard from '@/views/AboutPage/components/AboutPageCard/AboutPageCard.vue';
-import SupportFond from '@/components/SupportFond/SupportFond.vue';
 import AboutPageManagementBlock from '@/views/AboutPage/components/AboutPageManagementBlock/AboutPageManagementBlock.vue';
 import TitleInnerBlock from '@/components/TitleInnerBlock/TitleInnerBlock.vue';
 

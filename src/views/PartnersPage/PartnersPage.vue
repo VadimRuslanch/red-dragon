@@ -23,5 +23,4 @@ import PartnersPagePartnersList from '@/views/PartnersPage/components/PartnersPa
 import PartnersPagePartnersPossibilities from '@/views/PartnersPage/components/PartnersPagePartnersPossibilities/PartnersPagePartnersPossibilities.vue';
 import PartnersPagePartnersSupport from '@/views/PartnersPage/components/PartnersPagePartnersSupport/PartnersPagePartnersSupport.vue';
 import PartnersPagePartnersAccompaniment from '@/views/PartnersPage/components/PartnersPagePartnersAccompaniment/PartnersPagePartnersAccompaniment.vue';
-import SupportFond from '@/components/SupportFond/SupportFond.vue';
 </script>
