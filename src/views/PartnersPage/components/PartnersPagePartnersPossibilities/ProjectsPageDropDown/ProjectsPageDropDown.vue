@@ -1,13 +1,13 @@
 <template>
-  <div class="DropDown">
-    <details class="DropDown__details" name="DropDown">
-      <summary class="DropDown__title">
-        {{ title }} <IconPlus class="DropDown__title_icon" />
+  <div class="ProjectsPageDropDown">
+    <details class="ProjectsPageDropDown__details" name="ProjectsPageDropDown">
+      <summary class="ProjectsPageDropDown__title">
+        {{ title }} <IconPlus class="ProjectsPageDropDown__title_icon" />
       </summary>
 
-      <div class="DropDown__inner">
-        <span class="DropDown__inner-wr">
-          <p class="DropDown__inner-text">{{ description }}</p>
+      <div class="ProjectsPageDropDown__inner">
+        <span class="ProjectsPageDropDown__inner-wr">
+          <p class="ProjectsPageDropDown__inner-text">{{ description }}</p>
         </span>
       </div>
     </details>

@@ -1,12 +1,24 @@
-.DropDown {
+.ProjectsPageDropDown {
   border-top: 1px solid rgba(255, 255, 255, .1);
   padding: 32px;
 }
 
-.DropDown__title {
+.ProjectsPageDropDown__title {
+  cursor: pointer;
+  user-select: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  &:hover{
+    opacity: 1;
+  }
+
+  &:hover .ProjectsPageDropDown__title_icon{
+    opacity: 1;
+  }
+
+
   @media screen and (min-width: 1280px) {
     color: var(--color-font-secondaty);
     font-weight: 700;
@@ -17,22 +29,22 @@
   }
 }
 
-.DropDown__title_icon{
+.ProjectsPageDropDown__title_icon{
   opacity: 0;
 }
 
-.DropDown__inner{
+.ProjectsPageDropDown__inner{
   margin-top: 24px;
   display: grid;
   grid-template-rows: 0fr;
   transition-duration: 0.4s;
 }
 
-.DropDown__inner-wr{
+.ProjectsPageDropDown__inner-wr{
   overflow: hidden;
 }
 
-.DropDown__inner-text{
+.ProjectsPageDropDown__inner-text{
   font-size: 1.25rem;
   font-weight: 400;
   font-family: Inter;
@@ -47,11 +59,15 @@
 
 
 
-.DropDown__details[open] {
-  & .DropDown__title, .DropDown__title_icon {
+.ProjectsPageDropDown__details[open] {
+  & .ProjectsPageDropDown__title, .ProjectsPageDropDown__title_icon {
     opacity: 1;
   }
-  & .DropDown__inner{
+
+  & .ProjectsPageDropDown__title_icon {
+    transform: rotateZ(45deg);
+  }
+  & .ProjectsPageDropDown__inner{
     grid-template-rows: 1fr;
   }
 }
@@ -60,6 +76,6 @@
 
 
 
-.DropDown__title, .DropDown__title_icon {
-  transition: opacity .4s ease;
+.ProjectsPageDropDown__title, .ProjectsPageDropDown__title_icon {
+  transition: opacity .4s ease, transform .4s ease;
 }

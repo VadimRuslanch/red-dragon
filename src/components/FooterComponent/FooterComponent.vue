@@ -1,5 +1,6 @@
 <template>
   <footer class="Footer">
+    <SupportFond />
     <div class="page">
       <div class="Footer__logo">
         <LogoComponent />
@@ -77,4 +78,5 @@ import LogoComponent from '@/ui/LogoComponent/LogoComponent.vue';
 import IconVK from '@/assets/svg/icon-vk.svg';
 import IconWhatsapp from '@/assets/svg/icon-whatsapp.svg';
 import IconVendor from '@/assets/svg/Victor.svg';
+import SupportFond from '@/components/SupportFond/SupportFond.vue';
 </script>

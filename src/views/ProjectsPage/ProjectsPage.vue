@@ -23,7 +23,6 @@
         />
       </ModalOverlay>
     </Teleport>
-    <SupportFond />
   </div>
 </template>
 
@@ -32,7 +31,6 @@ import { computed, ref } from 'vue';
 import './ProjectsPage.scss';
 import TitlePage from '@/components/TitlePage/TitlePage.vue';
 import ProjectsPageCard from '@/views/ProjectsPage/components/ProjectsPageCard.vue';
-import SupportFond from '@/components/SupportFond/SupportFond.vue';
 import ModalOverlay from '@/components/ModalOverlay/ModalOverlay.vue';
 import ProjectModal from '@/components/ProjectModal/ProjectModal.vue';
 

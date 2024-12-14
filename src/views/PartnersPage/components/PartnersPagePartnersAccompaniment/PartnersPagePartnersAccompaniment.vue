@@ -9,7 +9,15 @@
         :number="item.number"
       />
     </div>
-    <ButtonMainCallBack />
+    <ButtonMainCallBack @toggleModal="toggleModal" title="Стать партнером" />
+    <Teleport to="body">
+      <ModalOverlay v-if="isActive">
+        <CallBackComponent
+          v-scroll-lock="isActive"
+          @toggleModal="toggleModal"
+        />
+      </ModalOverlay>
+    </Teleport>
   </div>
 </template>
 
@@ -18,6 +26,15 @@ import './PartnersPagePartnersAccompaniment.scss';
 import TitleInnerBlock from '@/components/TitleInnerBlock/TitleInnerBlock.vue';
 import PartnersAccompanimentCard from '@/views/PartnersPage/components/PartnersPagePartnersAccompaniment/PartnersAccompanimentCard/PartnersAccompanimentCard.vue';
 import ButtonMainCallBack from '@/ui/ButtonMainCallBack/ButtonMainCallBack.vue';
+import ModalOverlay from '@/components/ModalOverlay/ModalOverlay.vue';
+import CallBackComponent from '@/components/CallBackComponent/CallBackComponent.vue';
+import { ref } from 'vue';
+
+const isActive = ref<boolean>(false);
+const toggleModal = () => {
+  isActive.value = !isActive.value;
+  console.log(isActive.value);
+};
 const listArray = [
   {
     id: 1,

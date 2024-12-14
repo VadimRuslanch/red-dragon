@@ -1,9 +1,9 @@
 <template>
   <tr class="EventsPageTableItem">
     <td class="EventsPageTableItem__text">{{ project }}</td>
-    <td>{{ form }}</td>
-    <td>{{ name }}</td>
-    <td>{{ date }}</td>
+    <td class="EventsPageTableItem__text">{{ form }}</td>
+    <td class="EventsPageTableItem__text">{{ name }}</td>
+    <td class="EventsPageTableItem__text">{{ date }}</td>
   </tr>
 </template>
 

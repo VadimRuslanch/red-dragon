@@ -1,9 +1,16 @@
 .EventsPageTableItem {
+  background-color: rgba(255, 255, 255, 0.04)
+}
 
+.EventsPageTableItem:last-child .EventsPageTableItem__text{
+  border-bottom: none;
 }
 
 .EventsPageTableItem__text{
-  font-family: Bebas-Neue;
-  font-size: 2.25rem;
-  font-weight: 700;
+  padding: 16px 0 16px 40px;
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--color-font-secondaty);
+  border-bottom: 8px solid #212124;
 }

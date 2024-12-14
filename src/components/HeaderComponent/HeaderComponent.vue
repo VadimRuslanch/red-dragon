@@ -8,7 +8,7 @@
         <ButtonDefault @toggleModal="toggleModal" />
       </div>
       <div class="Header__burger">
-        <ButtonBurger @toggleMenu="toggleMenu" />
+        <ButtonBurger @toggleMenu="openModal" />
       </div>
     </div>
 
@@ -22,9 +22,11 @@
     </Teleport>
 
     <Teleport to="body">
-      <ModalOverlay v-if="isActiveManu">
-        <MainManu v-scroll-lock="isActiveManu" @toggleMenu="toggleMenu" />
-      </ModalOverlay>
+      <Transition name="ModalOverlay">
+        <ModalOverlay v-if="isActiveManu">
+          <MainManu v-scroll-lock="isActiveManu" @toggleMenu="closeModal" />
+        </ModalOverlay>
+      </Transition>
     </Teleport>
   </header>
 </template>
@@ -61,13 +63,12 @@ const toggleModal = () => {
   console.log(isActive.value);
 };
 
-// const closeModal = () => {
-//   isActive.value = false;
-// };
+const openModal = () => {
+  isActiveManu.value = true;
+};
 
-const toggleMenu = () => {
-  isActiveManu.value = !isActiveManu.value;
-  console.log(isActive.value);
+const closeModal = () => {
+  isActiveManu.value = false;
 };
 
 const handleScroll = () => {

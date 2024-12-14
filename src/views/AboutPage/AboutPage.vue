@@ -36,7 +36,6 @@
       </div>
       <AboutPageManagementBlock />
     </div>
-    <SupportFond />
   </div>
 </template>
 

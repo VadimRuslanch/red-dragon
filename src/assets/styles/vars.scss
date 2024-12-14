@@ -12,7 +12,7 @@
 
   /* --------- Global Modal --------- */
   --transition-properties: --;
-  --transition-clip-path-modal: --;
+  --transition-clip-path-modal: clip-path 1.25s cubic-bezier(0.62, 0.05, 0.01, 0.99);
 
   /* --------- Swiper --------- */
   --swiper-pagination-bullet-horizontal-gap: --;

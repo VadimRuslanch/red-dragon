@@ -1,0 +1,29 @@
+.EventsPageTabs {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.EventsPageTabs__tabs {
+  display: flex;
+  gap: 64px;
+  padding-bottom: 40px;
+}
+
+.EventsPageTabs__tab {
+  transition: opacity .4s ease;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: Inter;
+  line-height: 150%;
+  color: var(--color-font-secondaty);
+  opacity: .5;
+
+  &.active {
+    opacity: 1;
+  }
+}
+
+.EventsPageTabs__content {
+  display: grid;
+  gap: 24px;
+}

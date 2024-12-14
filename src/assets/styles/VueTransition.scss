@@ -1,0 +1,20 @@
+.ModalOverlay-enter-active,
+.ModalOverlay-leave-active {
+  transition: var(--transition-clip-path-modal);
+}
+
+.ModalOverlay-enter-from {
+  clip-path: polygon(0% 0%, 0% 0, 0% 100%, 0% 100%); /* Начальная точка появления: скрыто слева */
+}
+
+.ModalOverlay-enter-to {
+  clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 100%); /* Конечная точка появления: полностью видно */
+}
+
+.ModalOverlay-leave-from {
+  clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 100%); /* Начальная точка скрытия: полностью видно */
+}
+
+.ModalOverlay-leave-to {
+  clip-path: polygon(100% 0%, 100% 0, 100% 100%, 100% 100%); /* Конечная точка скрытия: уходит влево */
+}

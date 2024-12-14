@@ -76,3 +76,10 @@
 .AboutPageManagementBlockItem__image-content{
   overflow: hidden;
 }
+
+.AboutPageManagementBlockItem__image{
+  object-position: top;
+  object-fit: cover;
+  width: 75%;
+  aspect-ratio: 1 / 1;
+}
