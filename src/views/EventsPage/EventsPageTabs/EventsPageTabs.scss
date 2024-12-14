@@ -3,9 +3,29 @@
 }
 
 .EventsPageTabs__tabs {
+  position: relative;
+  padding-bottom: 40px;
+  max-width: calc(100vw - 40px);
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  
+  @media screen and (min-width: 768px) {
+    max-width: calc(100vw - 80px);
+  }
+}
+
+.EventsPageTabs__tabs-scroll {
   display: flex;
   gap: 64px;
-  padding-bottom: 40px;
+  min-width: 100%;
 }
 
 .EventsPageTabs__tab {

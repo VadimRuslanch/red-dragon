@@ -1,14 +1,16 @@
 <template>
   <div class="EventsPageTabs">
     <div class="EventsPageTabs__tabs">
-      <button
-        class="EventsPageTabs__tab"
-        :class="{ active: index === indexActiveTab }"
-        v-for="(item, index) in listArray"
-        @click="setIndex(index)"
-      >
-        {{ item.title }}
-      </button>
+      <div class="EventsPageTabs__tabs-scroll">
+        <button
+          class="EventsPageTabs__tab"
+          :class="{ active: index === indexActiveTab }"
+          v-for="(item, index) in listArray"
+          @click="setIndex(index)"
+        >
+          {{ item.title }}
+        </button>
+      </div>
     </div>
     <div class="EventsPageTabs__content">
       <EventsPageTabItem
@@ -43,9 +45,8 @@ const setIndex = (index: number) => {
 };
 
 const currentTab = computed<ItemTab[]>(() => {
-  // Проверяем, существует ли элемент в listArray
   const tab = listArray[indexActiveTab.value];
-  return tab ? tab.items : []; // Если элемент найден, возвращаем его items, иначе пустой массив
+  return tab ? tab.items : [];
 });
 
 const listArray = [

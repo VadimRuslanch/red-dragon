@@ -46,6 +46,10 @@ summary{
   list-style-type: none;
 }
 
+summary::-webkit-details-marker {
+  display: none;
+}
+
 #app {
   display: flex;
   flex: 1;

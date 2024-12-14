@@ -1,14 +1,14 @@
 .Info__title {
   text-align: center;
   line-height: 100%;
-  font-size: 96px;
+  font-size: clamp(6rem, 0.464rem + 27.679vw, 13.75rem);
   font-weight: 700;
 
   & span {
     color: var(--color-accent);
   }
 
-  @media screen and (min-width: 620px) {
+  @media screen and (min-width: 768px) {
     font-size: var(--size-font-main);
   }
 }

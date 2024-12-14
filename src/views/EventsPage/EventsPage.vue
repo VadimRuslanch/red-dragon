@@ -2,15 +2,17 @@
   <div class="EventsPage">
     <div class="EventsPage-wr page">
       <TitlePage class="EventsPage__title" title="мероприятия" />
-      <EventsPageTable>
-        <EventsPageTableItem
-          v-for="item in tableArray"
-          :project="item.project"
-          :date="item.date"
-          :name="item.name"
-          :form="item.form"
-        />
-      </EventsPageTable>
+      <div class="EventsPageTable__scroll">
+        <EventsPageTable>
+          <EventsPageTableItem
+            v-for="item in tableArray"
+            :project="item.project"
+            :date="item.date"
+            :name="item.name"
+            :form="item.form"
+          />
+        </EventsPageTable>
+      </div>
       <EventsPageTabs />
     </div>
   </div>

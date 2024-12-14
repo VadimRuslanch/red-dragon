@@ -61,7 +61,10 @@
           <span class="Footer__bottom-left-copy"
             >&#169; 2024 Фонд Красный Дракон</span
           >
-          <RouterLink to="privacy-policy" class="Footer__bottom-left-privacy"
+          <RouterLink
+            target="_blank"
+            to="privacy-policy"
+            class="Footer__bottom-left-privacy"
             >Политика конфиденциальности</RouterLink
           >
         </div>
