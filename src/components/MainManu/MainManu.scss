@@ -1,5 +1,5 @@
 .MainManu {
-  padding: 26px 0 40px;
+  padding: 20px 0 40px;
   width: 100%;
   height: 100%;
   background-color: var(--color-bg-main);
@@ -11,12 +11,26 @@
   }
 }
 
-.MainManu-top {
+.MainManu-wr {
   height: fit-content;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 33% 33% 20%;
+  }
+
+  @media screen and (min-width: 1680px) {
+    grid-template-columns: 570px 570px 395px;
+  }
 }
+
+.MainManu__button{
+  justify-self: flex-start;
+}
+
 
 .MainManu-bottom {
   display: flex;
@@ -65,6 +79,26 @@
   padding: 16px;
   border-top: 1px solid rgba(255, 255, 255, .1);
   border-bottom: 1px solid rgba(255, 255, 255, .1);
+  @media screen and (min-width: 768px) {
+    text-align: right;
+  }
+}
+
+.MainManu__list-item--wr{
+
+  display: inline-block;
+
+  margin-left: auto;
+  font-size: clamp(3.5rem, 2.474rem + 5.263vw, 6rem);
+
+  @media screen and (min-width: 768px) {
+    width: 60%;
+    text-align: left;
+  }
+
+  @media screen and (min-width: 1680px) {
+    width: 61.5%;
+  }
 }
 
 .MainManu__list-item-text {

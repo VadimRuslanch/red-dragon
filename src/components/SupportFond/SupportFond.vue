@@ -15,12 +15,14 @@
     <IconDragon class="SupportFond__image" width="607" heigth="667" />
 
     <Teleport to="body">
-      <ModalOverlay v-if="isActive">
-        <CallBackComponent
-          v-scroll-lock="isActive"
-          @toggleModal="toggleModal"
-        />
-      </ModalOverlay>
+      <Transition name="ModalOverlay">
+        <ModalOverlay v-if="isActive">
+          <CallBackComponent
+            v-scroll-lock="isActive"
+            @toggleModal="toggleModal"
+          />
+        </ModalOverlay>
+      </Transition>
     </Teleport>
   </div>
 </template>

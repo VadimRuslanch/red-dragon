@@ -143,15 +143,15 @@
 }
 
 .Footer__bottom-left-privacy {
-  transition: opacity .4s ease;
+  transition: color .4s ease;
   font-family: Inter;
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 150%;
-  color: var(--color-font-secondaty);
-  opacity: .2;
+  color: rgba(255, 255, 255, .3);
 
   &:hover {
     opacity: 1;
+    color: var(--color-accent);
   }
 }

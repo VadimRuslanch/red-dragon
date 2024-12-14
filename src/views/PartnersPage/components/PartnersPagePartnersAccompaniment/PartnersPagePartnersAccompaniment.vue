@@ -11,12 +11,14 @@
     </div>
     <ButtonMainCallBack @toggleModal="toggleModal" title="Стать партнером" />
     <Teleport to="body">
-      <ModalOverlay v-if="isActive">
-        <CallBackComponent
-          v-scroll-lock="isActive"
-          @toggleModal="toggleModal"
-        />
-      </ModalOverlay>
+      <Transition name="ModalOverlay">
+        <ModalOverlay v-if="isActive">
+          <CallBackComponent
+            v-scroll-lock="isActive"
+            @toggleModal="toggleModal"
+          />
+        </ModalOverlay>
+      </Transition>
     </Teleport>
   </div>
 </template>

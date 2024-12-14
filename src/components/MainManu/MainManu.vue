@@ -1,11 +1,14 @@
 <template>
   <div class="MainManu">
     <div class="page">
-      <div class="MainManu-top">
+      <div class="MainManu-wr">
         <div class="MainManu-top-item" style="text-align: left">
           <LogoComponent />
         </div>
-        <div class="MainManu-top-item" style="text-align: center">
+        <div
+          class="MainManu-top-item MainManu__button"
+          style="text-align: center"
+        >
           <ButtonDefault />
         </div>
         <div class="MainManu-top-item" style="text-align: right">
@@ -17,29 +20,39 @@
 
       <ul class="MainManu__list">
         <li class="MainManu__list-item">
-          <RouterLink class="MainManu__list-item-text" to="about"
-            >о фонде</RouterLink
-          >
+          <span class="MainManu__list-item--wr">
+            <RouterLink class="MainManu__list-item-text" to="about"
+              >о фонде</RouterLink
+            >
+          </span>
         </li>
         <li class="MainManu__list-item">
-          <RouterLink class="MainManu__list-item-text" to="projects"
-            >проекты</RouterLink
-          >
+          <span class="MainManu__list-item--wr">
+            <RouterLink class="MainManu__list-item-text" to="projects"
+              >проекты</RouterLink
+            >
+          </span>
         </li>
         <li class="MainManu__list-item">
-          <RouterLink class="MainManu__list-item-text" to="events"
-            >мероприятия</RouterLink
-          >
+          <span class="MainManu__list-item--wr">
+            <RouterLink class="MainManu__list-item-text" to="events"
+              >мероприятия</RouterLink
+            >
+          </span>
         </li>
         <li class="MainManu__list-item">
-          <RouterLink class="MainManu__list-item-text" to="partners"
-            >партнеры</RouterLink
-          >
+          <span class="MainManu__list-item--wr">
+            <RouterLink class="MainManu__list-item-text" to="partners"
+              >партнеры</RouterLink
+            >
+          </span>
         </li>
         <li class="MainManu__list-item">
-          <RouterLink class="MainManu__list-item-text" to="contacts"
-            >контакты</RouterLink
-          >
+          <span class="MainManu__list-item--wr">
+            <RouterLink class="MainManu__list-item-text" to="contacts"
+              >контакты</RouterLink
+            >
+          </span>
         </li>
       </ul>
 

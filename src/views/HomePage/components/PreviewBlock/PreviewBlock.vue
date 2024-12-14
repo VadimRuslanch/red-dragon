@@ -35,8 +35,19 @@
 
       <InfoComponent />
 
-      <ButtonMainCallBack />
+      <ButtonMainCallBack @toggleModal="toggleModal" />
     </div>
+
+    <Teleport to="body">
+      <Transition name="ModalOverlay">
+        <ModalOverlay v-if="isActive">
+          <CallBackComponent
+            v-scroll-lock="isActive"
+            @toggleModal="toggleModal"
+          />
+        </ModalOverlay>
+      </Transition>
+    </Teleport>
   </div>
 </template>
 
@@ -45,4 +56,13 @@ import './PreviewBlock.scss';
 import NavigationMain from '@/components/NavigationMain/NavigationMain.vue';
 import InfoComponent from '@/components/InfoComponent/InfoComponent.vue';
 import ButtonMainCallBack from '@/ui/ButtonMainCallBack/ButtonMainCallBack.vue';
+import ModalOverlay from '@/components/ModalOverlay/ModalOverlay.vue';
+import CallBackComponent from '@/components/CallBackComponent/CallBackComponent.vue';
+import { ref } from 'vue';
+
+const isActive = ref<boolean>(false);
+
+const toggleModal = () => {
+  isActive.value = !isActive.value;
+};
 </script>

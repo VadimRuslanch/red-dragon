@@ -13,12 +13,14 @@
     </div>
 
     <Teleport to="body">
-      <ModalOverlay v-if="isActive">
-        <CallBackComponent
-          v-scroll-lock="isActive"
-          @toggleModal="toggleModal"
-        />
-      </ModalOverlay>
+      <Transition name="ModalOverlay">
+        <ModalOverlay v-if="isActive">
+          <CallBackComponent
+            v-scroll-lock="isActive"
+            @toggleModal="toggleModal"
+          />
+        </ModalOverlay>
+      </Transition>
     </Teleport>
 
     <Teleport to="body">
