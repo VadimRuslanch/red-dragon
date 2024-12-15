@@ -57,5 +57,9 @@
   position: absolute;
   right: 87px;
   top: 90px;
-  fill: rgba(0, 0, 0, 0.08);
+  fill: rgba(0, 0, 0, .08);
+
+  @media screen and (max-width: 1279px ) {
+    display: none;
+  }
 }

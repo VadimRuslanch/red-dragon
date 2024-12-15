@@ -11,43 +11,40 @@
   padding: 16px;
   font-family: Inter;
   font-size: 1.25rem;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 150%;
   color: var(--color-font-primary);
   border-radius: 4px;
   background-color: #ffffff;
 }
 
-.Dropdown__selected-icon{
+.Dropdown__selected-icon {
   transition: transform .4s ease;
-  &.active{
+  &.active {
     transform: rotateZ(180deg);
   }
 }
 
 .Dropdown__options {
+  border-radius: 4px;
   z-index: 2;
   position: absolute;
   top: 64px;
   width: 100%;
-  background-color: rgb(224, 224, 224);
+  background-color: #ffffff;
   border-radius: 0 0 4px 4px;
 }
 
 .Dropdown__option {
-  border-radius: 4px;
-  padding: 8px;
+
+  padding: 11px 0;
+  margin: 0 16px;
   font-family: Inter;
-  margin-bottom: 6px;
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 150%;
   color: var(--color-font-primary);
-  border-bottom: 1px solid rgba(34, 34, 34, 0.2);
+  border-bottom: 1px solid rgba(24, 24, 27, 0.08);
   background-color: #ffffff;
-
-  &:last-child {
-    margin: 0;
-  }
 }
 

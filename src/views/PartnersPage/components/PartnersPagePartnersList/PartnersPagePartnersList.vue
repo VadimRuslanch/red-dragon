@@ -1,16 +1,20 @@
 <template>
-  <div class="PartnersPagePartnersList">
-    <PartnersListCard
-      v-for="item in listArray"
-      :key="item.id"
-      :image="item.image"
-    />
+  <div>
+    <TitleInnerBlock title="Нас поддерживают" />
+    <div class="PartnersPagePartnersList">
+      <PartnersListCard
+        v-for="item in listArray"
+        :key="item.id"
+        :image="item.image"
+      />
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import './PartnersPagePartnersList.scss';
 import PartnersListCard from '@/views/PartnersPage/components/PartnersPagePartnersList/PartnersListCard/PartnersListCard.vue';
+import TitleInnerBlock from '@/components/TitleInnerBlock/TitleInnerBlock.vue';
 
 const listArray = [
   {

@@ -31,7 +31,6 @@
 .Info__bottom {
   margin: 40px 0;
   display: grid;
-  gap: 40px;
   justify-content: space-between;
   
   @media screen and (min-width: 520px) {
@@ -40,6 +39,7 @@
   
   @media screen and (min-width: 768px) {
     margin: 64px 0;
+    gap: 40px;
   }
 
   @media screen and (min-width: 1280px) {

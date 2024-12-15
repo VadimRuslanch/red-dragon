@@ -2,7 +2,7 @@
   <div class="PartnersPage">
     <div class="PartnersPage-container">
       <div class="page">
-        <TitlePage title="партнерам" />
+        <TitlePage class="PartnersPage__title" title="партнерам" />
         <div class="PartnersPage-wr">
           <PartnersPagePreviewBlock />
           <PartnersPagePartnersList />

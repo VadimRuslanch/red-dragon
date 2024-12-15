@@ -1,2 +1,102 @@
-.ContactsPage {
+.ContactsPage.page {
+  padding-top: 120px;
+  padding-bottom: 80px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 200px;
+    padding-bottom: 128px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 250px;
+    padding-bottom: 180px;
+  }
 }
+
+.ContactsPage__title {
+  font-size: clamp(4.5rem, -1.4rem + 29.5vw, 11.875rem);
+  margin-bottom: 80px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 120px;
+  }
+}
+
+
+.ContactsPage__inner {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  @media screen and (min-width: 1280px) {
+    flex-direction: row;
+  }
+}
+
+.ContactsPage__inner-wr {
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 0.04);
+  flex: 1;
+}
+
+.ContactsPage__inner-title {
+  font-size: clamp(1.5rem, 0.7rem + 4vw, 2.5rem);
+  color: var(--color-font-secondaty);
+  font-weight: 700;
+  font-family: Bebas-Neue;
+  line-height: 120%;
+  margin-bottom: 24px;
+}
+
+.ContactsPage__inner-link {
+  display: block;
+  font-size: 1.25rem;
+  color: var(--color-font-secondaty);
+  font-weight: 400;
+  font-family: Inter;
+  line-height: 120%;
+  margin-bottom: 16px;
+
+  &:hover {
+    color: var(--color-accent);
+  }
+}
+
+.ContactsPage__inner-item {
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+
+.ContactsPage__inner-type {
+  font-size: 1.25rem;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--color-font-secondaty);
+  opacity: .3;
+  margin-bottom: 8px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
+  }
+}
+
+.ContactsPage__inner-name {
+  font-size: 1.25rem;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--color-font-secondaty);
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 600px) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    text-align: left;
+    width: 40%;
+  }
+}
+

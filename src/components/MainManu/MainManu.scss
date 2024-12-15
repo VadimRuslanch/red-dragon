@@ -9,6 +9,7 @@
     display: grid;
     gap: 40px;
     min-height: fit-content;
+    height: 100%;
   }
 }
 
@@ -36,6 +37,7 @@
 .MainManu-bottom {
   display: flex;
   justify-content: space-between;
+  height: fit-content;
 }
 
 .MainManu-bottom__tel {

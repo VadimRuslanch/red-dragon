@@ -1,50 +1,69 @@
 .ProjectsPageDropDown {
   border-top: 1px solid rgba(255, 255, 255, .1);
-  padding: 32px;
+  padding: 16px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 24px 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 32px;
+  }
 }
 
 .ProjectsPageDropDown__title {
+  color: var(--color-font-secondaty);
+  font-weight: 700;
+  font-family: Bebas-Neue;
+  line-height: 110%;
+  font-size: clamp(1.5rem, -0.25rem + 8vw, 3.5rem);
+  opacity: .1;
   cursor: pointer;
   user-select: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  &:hover{
+  &:hover {
     opacity: 1;
   }
 
-  &:hover .ProjectsPageDropDown__title_icon{
+  &:hover .ProjectsPageDropDown__title_icon {
     opacity: 1;
   }
 
 
   @media screen and (min-width: 1280px) {
-    color: var(--color-font-secondaty);
-    font-weight: 700;
-    font-family: Bebas-Neue;
+
+
+
     font-size: 5rem;
-    line-height: 110%;
-    opacity: .1;
+
   }
 }
 
-.ProjectsPageDropDown__title_icon{
+.ProjectsPageDropDown__title_icon {
+  min-width: 32px;
+  height: 32px;
   opacity: 0;
+  @media screen and (min-width: 768px) {
+    min-width: 64px;
+    height: 64px;
+  }
 }
 
-.ProjectsPageDropDown__inner{
+.ProjectsPageDropDown__inner {
   margin-top: 24px;
   display: grid;
   grid-template-rows: 0fr;
   transition-duration: 0.4s;
 }
 
-.ProjectsPageDropDown__inner-wr{
+.ProjectsPageDropDown__inner-wr {
   overflow: hidden;
 }
 
-.ProjectsPageDropDown__inner-text{
+.ProjectsPageDropDown__inner-text {
   font-size: 1.25rem;
   font-weight: 400;
   font-family: Inter;
@@ -58,7 +77,6 @@
 }
 
 
-
 .ProjectsPageDropDown__details[open] {
   & .ProjectsPageDropDown__title, .ProjectsPageDropDown__title_icon {
     opacity: 1;
@@ -67,13 +85,11 @@
   & .ProjectsPageDropDown__title_icon {
     transform: rotateZ(45deg);
   }
-  & .ProjectsPageDropDown__inner{
+
+  & .ProjectsPageDropDown__inner {
     grid-template-rows: 1fr;
   }
 }
-
-
-
 
 
 .ProjectsPageDropDown__title, .ProjectsPageDropDown__title_icon {
